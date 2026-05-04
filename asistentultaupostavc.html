@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Asistentul tau post-AVC – Ana. Intreaba orice despre recuperare, drepturi si viata dupa AVC. Disponibil 24/7, bazat pe Ghidul Viata dupa AVC.">
+<meta name="keywords" content="asistent AVC, chatbot AVC, intrebari AVC, recuperare AVC, ghid post-AVC, ajutor AVC Romania">
+<meta name="author" content="Asociatia Viata dupa AVC">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://viatadupaavc.ro/asistentultaupostavc.html">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://viatadupaavc.ro/asistentultaupostavc.html">
+<meta property="og:title" content="Asistentul tau post-AVC – Ana | Viata dupa AVC">
+<meta property="og:description" content="Primeste raspunsuri imediate despre recuperare, drepturi si viata dupa AVC. Disponibil 24/7.">
+<meta property="og:image" content="https://viatadupaavc.ro/og-image.jpg">
+<meta property="og:locale" content="ro_RO">
+<meta property="og:site_name" content="Viata dupa AVC">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Asistentul tau post-AVC – Ana">
+<meta name="twitter:description" content="Intreaba orice despre recuperare, drepturi si viata dupa AVC. Disponibil 24/7.">
+<meta name="twitter:image" content="https://viatadupaavc.ro/og-image.jpg">
+<title>Ana – Ghid Viața după AVC</title>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #1a3a5c;
+  --navy2: #1e4d75;
+  --teal: #2d7d6f;
+  --teal-light: #3a9b8a;
+  --cream: #f7f3ee;
+  --warm: #fdfaf6;
+  --text: #2c2c2c;
+  --muted: #7a7065;
+  --border: #e2d9ce;
+  --skin: #f5c5a3;
+  --skin-dark: #e8a882;
+  --hair: #4a2c0a;
+  --lip: #c0606a;
+  --lip-dark: #a04050;
+  --eye: #3a2210;
+  --blush: rgba(220,130,110,0.25);
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: linear-gradient(160deg, #dff0ec 0%, #e8eef7 50%, #f0ebe4 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.app {
+  width: 100%;
+  max-width: 440px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* ===== AVATAR PANEL ===== */
+.avatar-panel {
+  background: linear-gradient(160deg, var(--navy) 0%, #162e4a 100%);
+  border-radius: 28px 28px 0 0;
+  padding: 28px 24px 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.avatar-panel::before {
+  content:'';
+  position:absolute; top:-60px; right:-60px;
+  width:200px; height:200px;
+  background: radial-gradient(circle, rgba(45,125,111,0.18) 0%, transparent 70%);
+  border-radius:50%;
+}
+
+.avatar-panel::after {
+  content:'';
+  position:absolute; bottom:-40px; left:-40px;
+  width:150px; height:150px;
+  background: radial-gradient(circle, rgba(255,255,255,0.04) 0%, transparent 70%);
+  border-radius:50%;
+}
+
+.brand-row {
+  display:flex; align-items:center; gap:8px;
+  margin-bottom: 18px;
+  z-index:1;
+}
+.brand-logo { font-size:1.1rem; }
+.brand-name {
+  font-family:'Lora',serif;
+  color:rgba(255,255,255,0.85);
+  font-size:0.85rem;
+  letter-spacing:0.04em;
+}
+
+/* Face container */
+.face-container {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 16px;
+}
+
+.face-glow {
+  position:absolute;
+  top:50%; left:50%;
+  transform:translate(-50%,-50%);
+  width:160px; height:160px;
+  background: radial-gradient(circle, rgba(45,125,111,0.25) 0%, transparent 70%);
+  border-radius:50%;
+  animation: glowPulse 3s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+  0%,100% { opacity:0.6; transform:translate(-50%,-50%) scale(1); }
+  50% { opacity:1; transform:translate(-50%,-50%) scale(1.08); }
+}
+
+/* SVG Face */
+.ana-face {
+  width: 130px;
+  height: 130px;
+  filter: drop-shadow(0 8px 24px rgba(0,0,0,0.3));
+  position: relative;
+  z-index: 2;
+}
+
+/* Talking animation */
+.mouth-talking { animation: talkLoop 0.18s steps(1) infinite; }
+@keyframes talkLoop {
+  0%   { d: path("M 44,74 Q 50,79 56,74"); }
+  25%  { d: path("M 43,73 Q 50,82 57,73"); }
+  50%  { d: path("M 44,74 Q 50,77 56,74"); }
+  75%  { d: path("M 43,72 Q 50,84 57,72"); }
+}
+
+/* Blinking */
+.eye-lid-left, .eye-lid-right { animation: blink 4s ease-in-out infinite; }
+.eye-lid-right { animation-delay: 0.05s; }
+@keyframes blink {
+  0%,90%,100% { transform: scaleY(0); }
+  95% { transform: scaleY(1); }
+}
+
+/* Breathing */
+.face-body { animation: breathe 3.5s ease-in-out infinite; transform-origin: 50% 70%; }
+@keyframes breathe {
+  0%,100% { transform: scaleY(1); }
+  50% { transform: scaleY(1.012); }
+}
+
+/* Thinking */
+.ana-face.thinking { animation: thinking 0.6s ease-in-out infinite alternate; }
+@keyframes thinking { from { transform: rotate(-2deg); } to { transform: rotate(2deg); } }
+
+/* Status */
+.status-row {
+  display:flex; align-items:center; gap:8px;
+  margin-bottom: 6px;
+  z-index:1;
+}
+.status-dot {
+  width:9px; height:9px;
+  background:#4ade80;
+  border-radius:50%;
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0%,100% { box-shadow:0 0 0 0 rgba(74,222,128,0.5); }
+  50% { box-shadow:0 0 0 5px rgba(74,222,128,0); }
+}
+
+.ana-name {
+  font-family:'Lora',serif;
+  color:#fff;
+  font-size:1.3rem;
+  font-weight:500;
+}
+
+.ana-role {
+  color:rgba(255,255,255,0.55);
+  font-size:0.74rem;
+  text-align:center;
+  font-weight:300;
+  z-index:1;
+  letter-spacing:0.03em;
+}
+
+/* Speech bubble above */
+.speech-bubble {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 16px;
+  padding: 10px 14px;
+  margin-bottom: 14px;
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.9);
+  line-height: 1.5;
+  max-width: 320px;
+  text-align: center;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  transition: opacity 0.3s;
+  position: relative;
+}
+
+.speech-bubble::after {
+  content:'';
+  position:absolute;
+  bottom:-9px; left:50%;
+  transform:translateX(-50%);
+  border:5px solid transparent;
+  border-top-color: rgba(255,255,255,0.15);
+}
+
+/* Waveform */
+.waveform {
+  display:flex; gap:3px; align-items:center;
+  height:20px;
+  z-index:1;
+  opacity:0;
+  transition: opacity 0.3s;
+}
+.waveform.active { opacity:1; }
+.wave-bar {
+  width:3px;
+  background: rgba(45,200,170,0.8);
+  border-radius:2px;
+  animation: wave 0.8s ease-in-out infinite;
+}
+.wave-bar:nth-child(1){height:6px; animation-delay:0s;}
+.wave-bar:nth-child(2){height:14px; animation-delay:0.1s;}
+.wave-bar:nth-child(3){height:10px; animation-delay:0.2s;}
+.wave-bar:nth-child(4){height:18px; animation-delay:0.3s;}
+.wave-bar:nth-child(5){height:12px; animation-delay:0.4s;}
+.wave-bar:nth-child(6){height:16px; animation-delay:0.1s;}
+.wave-bar:nth-child(7){height:8px; animation-delay:0.2s;}
+@keyframes wave {
+  0%,100% { transform:scaleY(0.4); opacity:0.6; }
+  50% { transform:scaleY(1); opacity:1; }
+}
+
+/* ===== CHAT PANEL ===== */
+.chat-panel {
+  background: var(--warm);
+  border-radius: 0 0 28px 28px;
+  display: flex;
+  flex-direction: column;
+  height: 340px;
+  border: 1px solid var(--border);
+  border-top: none;
+  box-shadow: 0 16px 48px rgba(26,58,92,0.14);
+}
+
+.messages-area {
+  flex:1;
+  overflow-y:auto;
+  padding: 16px 16px 8px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  scroll-behavior:smooth;
+}
+.messages-area::-webkit-scrollbar { width:3px; }
+.messages-area::-webkit-scrollbar-thumb { background:var(--border); border-radius:2px; }
+
+.message { display:flex; gap:8px; max-width:86%; animation: msgIn 0.3s ease; }
+@keyframes msgIn { from { opacity:0; transform:translateY(6px); } to { opacity:1; transform:translateY(0); } }
+
+.message.user { align-self:flex-end; }
+.message.bot { align-self:flex-start; }
+
+.bubble {
+  padding: 10px 14px;
+  border-radius: 18px;
+  font-size:0.85rem;
+  line-height:1.55;
+  word-break:break-word;
+}
+.message.bot .bubble {
+  background: var(--cream);
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-bottom-left-radius: 4px;
+}
+.message.user .bubble {
+  background: linear-gradient(135deg, var(--navy), var(--navy2));
+  color:#fff;
+  border-bottom-right-radius: 4px;
+}
+
+/* Typing */
+.typing { display:flex; gap:8px; align-items:center; max-width:86%; }
+.typing-b {
+  background:var(--cream);
+  border:1px solid var(--border);
+  border-radius:18px;
+  border-bottom-left-radius:4px;
+  padding:10px 16px;
+  display:flex; gap:4px; align-items:center;
+}
+.dot { width:6px;height:6px;background:var(--teal);border-radius:50%;animation:bdot 1.2s infinite;opacity:0.6; }
+.dot:nth-child(2){animation-delay:0.2s;}
+.dot:nth-child(3){animation-delay:0.4s;}
+@keyframes bdot { 0%,80%,100%{transform:translateY(0);opacity:0.4;} 40%{transform:translateY(-5px);opacity:1;} }
+
+/* Quick replies */
+.quick-replies {
+  display:flex; flex-wrap:wrap; gap:6px;
+  padding: 8px 16px 10px;
+  border-bottom: 1px solid var(--border);
+}
+.qr {
+  background: var(--cream);
+  border: 1.5px solid var(--teal);
+  color: var(--teal);
+  padding: 5px 11px;
+  border-radius: 20px;
+  font-size: 0.74rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family:'DM Sans',sans-serif;
+  font-weight:500;
+}
+.qr:hover { background:var(--teal); color:#fff; }
+
+/* Input */
+.input-row {
+  padding: 10px 14px;
+  display:flex; gap:8px; align-items:flex-end;
+  background:var(--warm);
+  border-top: 1px solid var(--border);
+  border-radius: 0 0 28px 28px;
+}
+.input-wrap {
+  flex:1;
+  background:var(--cream);
+  border:1.5px solid var(--border);
+  border-radius:20px;
+  padding:9px 14px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  display:flex;align-items:flex-end;
+}
+.input-wrap:focus-within {
+  border-color:var(--teal);
+  box-shadow:0 0 0 3px rgba(45,125,111,0.1);
+}
+textarea {
+  border:none; background:transparent;
+  font-family:'DM Sans',sans-serif; font-size:0.85rem;
+  color:var(--text); width:100%; resize:none;
+  outline:none; max-height:80px; line-height:1.5;
+}
+textarea::placeholder { color:#bbb3a8; }
+
+.send-btn {
+  width:38px;height:38px;
+  background:linear-gradient(135deg,var(--teal),var(--teal-light));
+  border:none; border-radius:50%; cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;
+  transition:all 0.2s;
+  box-shadow:0 4px 12px rgba(45,125,111,0.3);
+}
+.send-btn:hover { transform:scale(1.08); }
+.send-btn:disabled { opacity:0.5; cursor:not-allowed; transform:none; }
+.send-btn svg { width:16px;height:16px;fill:#fff;margin-left:2px; }
+
+.note {
+  text-align:center;
+  font-size:0.63rem;
+  color:#c0b8af;
+  padding:6px 14px 8px;
+  line-height:1.4;
+}
+
+/* Emergency */
+.emg {
+  background:linear-gradient(135deg,#dc2626,#b91c1c);
+  color:#fff;
+  padding:7px 16px;
+  font-size:0.72rem;
+  text-align:center;
+  font-weight:500;
+  display:none;
+  border-radius:0;
+}
+.emg.show { display:block; animation:msgIn 0.3s ease; }
+
+@media (max-width:460px) {
+  .chat-panel { height:300px; }
+  .avatar-panel { padding:20px 16px 16px; }
+}
+</style>
+</head>
+<body>
+
+<div class="app">
+
+  <!-- AVATAR PANEL -->
+  <div class="avatar-panel">
+    <div class="brand-row">
+      <span class="brand-logo">🧠</span>
+      <span class="brand-name">Asociația Viața după AVC</span>
+    </div>
+
+    <!-- Speech bubble -->
+    <div class="speech-bubble" id="speech-bubble">
+      Bună ziua! Cum vă pot ajuta astăzi? 💙
+    </div>
+
+    <!-- The Face -->
+    <div class="face-container">
+      <div class="face-glow"></div>
+      <svg class="ana-face" id="ana-face" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        
+        <!-- Neck -->
+        <rect x="43" y="78" width="14" height="16" rx="6" fill="#f0b896"/>
+        
+        <!-- Shoulders hint -->
+        <ellipse cx="50" cy="96" rx="28" ry="10" fill="#3a9b8a" opacity="0.6"/>
+        
+        <!-- Head -->
+        <g class="face-body">
+          <!-- Head shape -->
+          <ellipse cx="50" cy="48" rx="28" ry="32" fill="var(--skin)"/>
+          
+          <!-- Hair back -->
+          <ellipse cx="50" cy="24" rx="29" ry="18" fill="var(--hair)"/>
+          <ellipse cx="22" cy="42" rx="8" ry="16" fill="var(--hair)"/>
+          <ellipse cx="78" cy="42" rx="8" ry="16" fill="var(--hair)"/>
+          
+          <!-- Ear left -->
+          <ellipse cx="22.5" cy="50" rx="4" ry="5.5" fill="var(--skin)"/>
+          <ellipse cx="22.5" cy="50" rx="2.5" ry="3.5" fill="var(--skin-dark)" opacity="0.4"/>
+          
+          <!-- Ear right -->
+          <ellipse cx="77.5" cy="50" rx="4" ry="5.5" fill="var(--skin)"/>
+          <ellipse cx="77.5" cy="50" rx="2.5" ry="3.5" fill="var(--skin-dark)" opacity="0.4"/>
+          
+          <!-- Hair top (foreground) -->
+          <path d="M22,32 Q30,12 50,10 Q70,12 78,32 Q72,20 50,18 Q28,20 22,32Z" fill="var(--hair)"/>
+          <!-- Gentle hair part -->
+          <path d="M50,10 Q54,18 53,26" stroke="#6b3d10" stroke-width="0.8" fill="none" opacity="0.5"/>
+          
+          <!-- Forehead -->
+          <ellipse cx="50" cy="35" rx="22" ry="12" fill="var(--skin)" opacity="0.3"/>
+          
+          <!-- Blush left -->
+          <ellipse cx="32" cy="58" rx="7" ry="4" fill="var(--blush)"/>
+          <!-- Blush right -->
+          <ellipse cx="68" cy="58" rx="7" ry="4" fill="var(--blush)"/>
+          
+          <!-- Eyebrows -->
+          <path d="M34,42 Q38,39.5 43,41" stroke="var(--hair)" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+          <path d="M57,41 Q62,39.5 66,42" stroke="var(--hair)" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+          
+          <!-- Eye whites -->
+          <ellipse cx="38.5" cy="47" rx="5.5" ry="4.2" fill="white"/>
+          <ellipse cx="61.5" cy="47" rx="5.5" ry="4.2" fill="white"/>
+          
+          <!-- Irises -->
+          <circle cx="38.5" cy="47" r="3.2" fill="#5a3a1a"/>
+          <circle cx="61.5" cy="47" r="3.2" fill="#5a3a1a"/>
+          <!-- Pupils -->
+          <circle cx="38.5" cy="47" r="1.8" fill="#1a0a00"/>
+          <circle cx="61.5" cy="47" r="1.8" fill="#1a0a00"/>
+          <!-- Eye shine -->
+          <circle cx="39.8" cy="45.5" r="0.9" fill="white"/>
+          <circle cx="62.8" cy="45.5" r="0.9" fill="white"/>
+          
+          <!-- Eyelashes top left -->
+          <path d="M33,44.5 Q35,42.5 38.5,43" stroke="#2a1a00" stroke-width="1" fill="none"/>
+          <path d="M38.5,43 Q42,42.5 44,44.5" stroke="#2a1a00" stroke-width="1" fill="none"/>
+          <!-- Eyelashes top right -->
+          <path d="M56,44.5 Q58,42.5 61.5,43" stroke="#2a1a00" stroke-width="1" fill="none"/>
+          <path d="M61.5,43 Q65,42.5 67,44.5" stroke="#2a1a00" stroke-width="1" fill="none"/>
+          
+          <!-- Eye lids (for blinking) -->
+          <g style="transform-origin:38.5px 47px">
+            <ellipse class="eye-lid-left" cx="38.5" cy="47" rx="5.5" ry="4.2" fill="var(--skin)"/>
+          </g>
+          <g style="transform-origin:61.5px 47px">
+            <ellipse class="eye-lid-right" cx="61.5" cy="47" rx="5.5" ry="4.2" fill="var(--skin)"/>
+          </g>
+          
+          <!-- Nose -->
+          <path d="M48,55 Q50,58 52,55" stroke="var(--skin-dark)" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+          <circle cx="47" cy="57" r="1.2" fill="var(--skin-dark)" opacity="0.35"/>
+          <circle cx="53" cy="57" r="1.2" fill="var(--skin-dark)" opacity="0.35"/>
+          
+          <!-- Mouth - default smile -->
+          <path id="mouth" d="M43,65 Q50,70 57,65" stroke="var(--lip)" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <!-- Lower lip -->
+          <path d="M44,66.5 Q50,70.5 56,66.5" stroke="var(--lip-dark)" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.5"/>
+          <!-- Lip highlight -->
+          <path d="M47,64.5 Q50,63.5 53,64.5" stroke="rgba(255,255,255,0.4)" stroke-width="0.8" fill="none" stroke-linecap="round"/>
+          
+          <!-- Small earrings -->
+          <circle cx="22.5" cy="54" r="1.8" fill="#c5a84a"/>
+          <circle cx="77.5" cy="54" r="1.8" fill="#c5a84a"/>
+          
+          <!-- Slight neck shadow -->
+          <path d="M43,78 Q50,82 57,78" stroke="var(--skin-dark)" stroke-width="1" fill="none" opacity="0.3"/>
+          
+        </g>
+      </svg>
+    </div>
+
+    <div class="status-row">
+      <div class="status-dot"></div>
+      <span class="ana-name">Ana</span>
+    </div>
+    <div class="ana-role">Consilier Viața după AVC · disponibilă acum</div>
+
+    <!-- Waveform -->
+    <div class="waveform" id="waveform">
+      <div class="wave-bar"></div>
+      <div class="wave-bar"></div>
+      <div class="wave-bar"></div>
+      <div class="wave-bar"></div>
+      <div class="wave-bar"></div>
+      <div class="wave-bar"></div>
+      <div class="wave-bar"></div>
+    </div>
+  </div>
+
+  <!-- CHAT PANEL -->
+  <div class="chat-panel">
+    <div class="emg" id="emg">⚠️ Urgență? Sunați <strong>112</strong> imediat — nu așteptați!</div>
+
+    <div class="messages-area" id="messages">
+      <!-- initial message shown in bubble above, chat starts empty -->
+    </div>
+
+    <!-- Quick replies -->
+    <div class="quick-replies" id="qrs">
+      <button class="qr" onclick="sendQ(this)">🏥 După externare</button>
+      <button class="qr" onclick="sendQ(this)">💊 Medicamente</button>
+      <button class="qr" onclick="sendQ(this)">📋 Drepturi legale</button>
+      <button class="qr" onclick="sendQ(this)">👨‍👩‍👧 Sfaturi familie</button>
+      <button class="qr" onclick="sendQ(this)">🧠 Exerciții recuperare</button>
+      <button class="qr" onclick="sendQ(this)">😔 Mă simt copleșit</button>
+    </div>
+
+    <div class="input-row">
+      <div class="input-wrap">
+        <textarea id="inp" rows="1" placeholder="Scrieți întrebarea…"
+          onkeydown="handleKey(event)" oninput="autoH(this)" maxlength="800"></textarea>
+      </div>
+      <button class="send-btn" id="sb" onclick="send()">
+        <svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+      </button>
+    </div>
+    <div class="note">Ana oferă informații orientative — nu înlocuiește sfatul medicului. Urgențe: 112</div>
+  </div>
+</div>
+
+<script>
+const SYSTEM = `Ești Ana, consilierul empatic al Asociației Viața după AVC din România. Ești caldă, umană, vorbești ca o soră medicală cu experiență care a trăit personal experiența unui AVC în familie.
+
+PERSONALITATE:
+- Caldă, empatică, răbdătoare — mereu cu inimă
+- Folosești "dvs." cu căldură naturală
+- Nu ești rece sau clinică — ești umană și prezentă
+- Când cineva e în dificultate emoțională, recunoști mai întâi emoția
+- Răspunsuri concise dar calde — max 150 cuvinte
+
+CUNOȘTINȚE — Ghidul Viața după AVC:
+- AVC: ischemic (~85%) și hemoragic (~15%). F.A.S.T: Față asimetrică, Brațe care nu se ridică, Speech neclar, Timp → 112 imediat
+- Fereastra critică: primele 3-6 luni — neuroplasticitate maximă, fiecare zi contează
+- Faze: acută (spital), post-acută (săpt 1-12 — cele mai mari progrese), cronică (>6 luni)
+- Echipa ideală: neurolog, medic recuperare, fizioterapeut, logoped, psiholog, terapeut ocupațional
+- Fizioterapie: 20 min zilnic > 2 ore săptămânal — consecvența e secretul
+- Logopedie: afazia NU înseamnă pierderea inteligenței — canalul e blocat, nu mintea
+- Sfaturi pacienți: medicamente zilnic fără excepție, exerciții zilnice, tensiune monitorizată, 30 min mișcare, nu se izolează social
+- Sfaturi familie: nu faceți totul în loc, comunicați clar și rar, nu supraprotejați, cereți ajutor
+- Adaptare acasă: bare sprijin baie, lampă noapte, NU conduce fără aviz medical
+- Depresie: 30-50% din supraviețuitori — tratabilă, nu slăbiciune de caracter
+- Drepturi România: certificat handicap (CEPAH județean), pensie invaliditate, medicamente compensate, asistent personal
+- Dietă: mediteraneană — pești grași, ulei măsline, legume; limitați sarea și prăjelile
+- Stil viață: renunță fumat (cel mai important!), mișcare zilnică, somn 7-9h, gestionează stresul
+- Surse ajutor: viatadupaavc.ro, 0741 507 884, viatadupaavc@gmail.com, grupuri suport Brașov
+
+REGULI CRITICE:
+1. Simptome AVC → insistă imediat să sune 112, nu continua normal
+2. Nu înlocuiești medicul — informații orientative mereu
+3. Criză emoțională → empatie profundă + recomandă psiholog sau asociație
+4. Răspunzi DOAR în română
+5. Răspunsuri scurte — max 120 cuvinte, clare și calde`;
+
+let history = [];
+let busy = false;
+let talkTimer = null;
+
+function getTime() {
+  return new Date().toLocaleTimeString('ro-RO',{hour:'2-digit',minute:'2-digit'});
+}
+
+function autoH(el) {
+  el.style.height='auto';
+  el.style.height=Math.min(el.scrollHeight,80)+'px';
+}
+
+function handleKey(e) {
+  if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();send();}
+}
+
+function sendQ(btn) {
+  const labels = {
+    '🏥 După externare': 'Ce fac imediat după externarea din spital?',
+    '💊 Medicamente': 'Ce trebuie să știu despre medicamentele după AVC?',
+    '📋 Drepturi legale': 'Ce drepturi legale am în România după AVC?',
+    '👨‍👩‍👧 Sfaturi familie': 'Cum pot ajuta un membru al familiei care a suferit un AVC?',
+    '🧠 Exerciții recuperare': 'Ce exerciții de recuperare pot face acasă?',
+    '😔 Mă simt copleșit': 'Mă simt complet copleșit de situație, nu știu ce să fac.'
+  };
+  const text = labels[btn.textContent] || btn.textContent;
+  document.getElementById('inp').value = text;
+  send();
+}
+
+function addMsg(role, text) {
+  const area = document.getElementById('messages');
+  const div = document.createElement('div');
+  div.className = `message ${role}`;
+  div.innerHTML = `<div class="bubble">${role==='user'?esc(text):fmt(text)}</div>`;
+  area.appendChild(div);
+  area.scrollTop = area.scrollHeight;
+}
+
+function showTyping() {
+  const area = document.getElementById('messages');
+  const d = document.createElement('div');
+  d.className='typing'; d.id='typ';
+  d.innerHTML=`<div class="typing-b"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>`;
+  area.appendChild(d);
+  area.scrollTop = area.scrollHeight;
+}
+
+function removeTyping() { const t=document.getElementById('typ'); if(t)t.remove(); }
+
+function esc(t) { return t.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/\n/g,'<br>'); }
+function fmt(t) {
+  return t.replace(/\*\*(.*?)\*\*/g,'<strong>$1</strong>')
+          .replace(/\*(.*?)\*/g,'<em>$1</em>')
+          .replace(/\n/g,'<br>');
+}
+
+// Avatar speaking animation
+function startTalking() {
+  const face = document.getElementById('ana-face');
+  const mouth = document.getElementById('mouth');
+  const wave = document.getElementById('waveform');
+  
+  face.classList.remove('thinking');
+  mouth.classList.add('mouth-talking');
+  wave.classList.add('active');
+}
+
+function stopTalking() {
+  const mouth = document.getElementById('mouth');
+  const wave = document.getElementById('waveform');
+  mouth.classList.remove('mouth-talking');
+  wave.classList.remove('active');
+  // Reset mouth to smile
+  mouth.setAttribute('d','M43,65 Q50,70 57,65');
+}
+
+function startThinking() {
+  const face = document.getElementById('ana-face');
+  face.classList.add('thinking');
+}
+
+function stopThinking() {
+  const face = document.getElementById('ana-face');
+  face.classList.remove('thinking');
+}
+
+function updateBubble(text) {
+  const b = document.getElementById('speech-bubble');
+  b.style.opacity='0';
+  setTimeout(()=>{
+    // Truncate for bubble display
+    const short = text.length > 80 ? text.substring(0,80)+'…' : text;
+    b.textContent = short;
+    b.style.opacity='1';
+  },200);
+}
+
+async function send() {
+  const inp = document.getElementById('inp');
+  const sb = document.getElementById('sb');
+  const text = inp.value.trim();
+  if(!text||busy) return;
+
+  // Hide quick replies
+  document.getElementById('qrs').style.display='none';
+
+  // Emergency check
+  const emgWords = ['fata asimetrica','nu poate vorbi','pierdut cunostinta','simptome avc','112','urgenta','urgență'];
+  if(emgWords.some(w=>text.toLowerCase().includes(w))) {
+    document.getElementById('emg').classList.add('show');
+  }
+
+  addMsg('user', text);
+  inp.value=''; inp.style.height='auto';
+  history.push({role:'user',content:text});
+
+  busy=true; sb.disabled=true;
+  showTyping();
+  startThinking();
+
+  try {
+    const res = await fetch('https://api.anthropic.com/v1/messages',{
+      method:'POST',
+      headers:{'Content-Type':'application/json','anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true'},
+      body: JSON.stringify({
+        model:'claude-sonnet-4-20250514',
+        max_tokens:600,
+        system:SYSTEM,
+        messages:history
+      })
+    });
+
+    const data = await res.json();
+    removeTyping();
+    stopThinking();
+
+    if(data.content&&data.content[0]) {
+      const reply = data.content[0].text;
+      history.push({role:'assistant',content:reply});
+      
+      // Show in chat
+      addMsg('bot', reply);
+      
+      // Update bubble and start talking animation
+      updateBubble(reply);
+      startTalking();
+      
+      // Emergency in response
+      if(reply.includes('112')||reply.includes('urgență')) {
+        document.getElementById('emg').classList.add('show');
+      }
+
+      // Stop talking after estimated reading time
+      if(talkTimer) clearTimeout(talkTimer);
+      const talkDuration = Math.min(Math.max(reply.length * 40, 2000), 8000);
+      talkTimer = setTimeout(stopTalking, talkDuration);
+
+    } else {
+      removeTyping();
+      stopThinking();
+      addMsg('bot','Ne pare rău, a apărut o problemă. Contactați-ne la **0741 507 884** 💙');
+      updateBubble('Ne pare rău, a apărut o problemă tehnică.');
+    }
+  } catch(e) {
+    removeTyping();
+    stopThinking();
+    stopTalking();
+    addMsg('bot','Conexiune întreruptă momentan. Sunați la **0741 507 884** pentru ajutor direct 💙');
+    updateBubble('Sunați la 0741 507 884 pentru ajutor.');
+  }
+
+  busy=false; sb.disabled=false;
+  document.getElementById('inp').focus();
+}
+
+// Initial greeting animation
+setTimeout(()=>{
+  startTalking();
+  setTimeout(stopTalking, 3000);
+}, 800);
+</script>
+
+</body>
+</html>
