@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Asociatia Viata dupa AVC ofera sprijin real pacientilor post-AVC si familiilor din Romania. Recuperare, ghidare, reintegrare sociala. Brasov.">
+<meta name="keywords" content="AVC recuperare, viata dupa AVC, asociatie AVC Romania, ghid AVC, pacienti AVC, reabilitare AVC, Brasov">
+<meta name="author" content="Asociatia Viata dupa AVC">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://viatadupaavc.ro/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://viatadupaavc.ro/">
+<meta property="og:title" content="Viata dupa AVC – Partenerul tau in drumul spre recuperare">
+<meta property="og:description" content="Sprijin real pentru pacienti post-AVC si familiile lor din Romania. Recuperare, drepturi, reintegrare sociala.">
+<meta property="og:image" content="https://viatadupaavc.ro/og-image.jpg">
+<meta property="og:locale" content="ro_RO">
+<meta property="og:site_name" content="Viata dupa AVC">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Viata dupa AVC – Partenerul tau in drumul spre recuperare">
+<meta name="twitter:description" content="Sprijin real pentru pacienti post-AVC si familiile lor din Romania.">
+<meta name="twitter:image" content="https://viatadupaavc.ro/og-image.jpg">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"NGO","name":"Asociatia Viata dupa AVC","url":"https://viatadupaavc.ro","description":"Asociatie non-profit din Brasov care sprijina pacientii post-AVC si familiile lor prin recuperare, informare si reintegrare sociala.","address":{"@type":"PostalAddress","streetAddress":"Str. Zorilor, Nr. 3, Bl. D6, Et. 3, Ap. 12","addressLocality":"Brasov","addressCountry":"RO"},"telephone":"+40741507884","email":"viatadupaavc@gmail.com","sameAs":["https://www.facebook.com/share/1LNMH58Ej6/","https://www.instagram.com/asociatia_viata_dupa_avc","https://www.tiktok.com/@viata.dupa.avc"]}</script>
+<title>Viata dupa AVC – Partenerul tau in drumul spre recuperare</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;0,700;1,600&family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#1a3a5c;--navy-dark:#132d47;--navy-bg:#1a2e44;
+  --teal:#1a9aaa;--teal-dark:#157a88;--teal-light:#e3f4f6;
+  --green:#5aaa2a;--white:#ffffff;--cream:#f7f9fb;
+  --gray:#e2e8ed;--gray-light:#f0f4f7;--text:#2d3a46;--text-muted:#6b7f8e;--border:#dde4ea;
+}
+*{margin:0;padding:0;box-sizing:border-box;}html{scroll-behavior:smooth;}
+body{font-family:'Nunito Sans',sans-serif;background:var(--white);color:var(--text);overflow-x:hidden;}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:var(--navy);height:62px;display:flex;align-items:center;padding:0 2rem;box-shadow:0 2px 16px rgba(0,0,0,0.18);}
+.nav-inner{width:100%;max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;}
+.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none;}
+.nav-logo-icon{width:34px;height:34px;background:var(--teal);border-radius:7px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1rem;color:var(--white);flex-shrink:0;}
+.nav-logo-text{color:var(--white);font-size:0.88rem;font-weight:700;line-height:1.2;}
+.nav-logo-text small{display:block;font-weight:400;font-size:0.7rem;color:rgba(255,255,255,0.5);}
+.nav-links{display:flex;align-items:center;gap:2px;}
+.nav-links>a{color:rgba(255,255,255,0.78);text-decoration:none;font-size:0.82rem;font-weight:600;padding:7px 11px;border-radius:6px;transition:all 0.2s;white-space:nowrap;}
+.nav-links>a:hover{color:var(--white);background:rgba(255,255,255,0.1);}
+.nav-ghid{background:rgba(26,154,170,0.15)!important;color:var(--teal)!important;border:1px solid rgba(26,154,170,0.3);border-radius:6px!important;}
+.nav-dropdown{position:relative;}
+.nav-dd-btn{display:flex;align-items:center;gap:5px;cursor:pointer;background:var(--teal);color:var(--white);padding:7px 16px;border-radius:20px;font-weight:700;font-size:0.82rem;text-decoration:none;transition:background 0.2s;border:none;font-family:'Nunito Sans',sans-serif;}
+.nav-dd-btn:hover{background:var(--teal-dark);}
+.dd-arrow{font-size:0.65rem;transition:transform 0.2s;}
+.nav-dropdown:hover .dd-arrow{transform:rotate(180deg);}
+.dropdown-menu{position:absolute;top:100%;right:0;padding-top:8px;min-width:260px;opacity:0;visibility:hidden;pointer-events:none;transition:opacity 0.2s,visibility 0.2s;}
+.dropdown-menu-inner{background:var(--white);border-radius:12px;box-shadow:0 8px 32px rgba(0,0,0,0.14);padding:8px;}
+.nav-dropdown:hover .dropdown-menu{opacity:1;visibility:visible;pointer-events:all;}
+.dropdown-menu-inner a{display:flex;align-items:center;gap:12px;padding:11px 12px;border-radius:8px;color:var(--text);font-size:0.87rem;text-decoration:none;transition:background 0.15s;font-weight:400;}
+.dropdown-menu-inner a:hover{background:var(--gray-light);}
+.dd-icon{width:38px;height:38px;border-radius:8px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:1.1rem;}
+.dd-icon.t{background:#e3f4f6;}.dd-icon.g{background:#eaf6e3;}
+.dd-text strong{display:block;font-weight:700;font-size:0.87rem;color:var(--navy);}
+.dd-text span{font-size:0.74rem;color:var(--text-muted);}
+.dd-divider{height:1px;background:var(--border);margin:4px 0;}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:6px;background:none;border:none;}
+.hamburger span{width:22px;height:2px;background:var(--white);border-radius:2px;display:block;transition:all 0.3s;}
+.mobile-menu{display:none;position:fixed;top:62px;left:0;right:0;bottom:0;background:var(--navy);z-index:999;padding:1.5rem 2rem;flex-direction:column;gap:0.2rem;overflow-y:auto;}
+.mobile-menu.open{display:flex;}
+.mobile-menu a{color:rgba(255,255,255,0.82);text-decoration:none;font-size:1rem;font-weight:600;padding:0.75rem 0;border-bottom:1px solid rgba(255,255,255,0.07);}
+.mob-label{color:var(--teal);font-size:0.72rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:1rem 0 0.3rem;}
+.mob-sub-link{padding-left:1rem!important;color:rgba(255,255,255,0.65)!important;font-size:0.9rem!important;}
+
+/* HERO */
+#hero{min-height:100vh;padding-top:62px;background:linear-gradient(150deg,var(--navy-dark) 0%,var(--navy) 45%,#1f4060 100%);display:flex;align-items:center;position:relative;overflow:hidden;}
+#hero::after{content:'';position:absolute;bottom:-1px;left:0;right:0;height:70px;background:var(--white);clip-path:ellipse(55% 100% at 50% 100%);}
+.hero-inner{max-width:1200px;margin:0 auto;padding:3rem 2rem 5rem;display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;}
+.hero-badge{display:inline-flex;align-items:center;gap:7px;background:rgba(26,154,170,0.18);border:1px solid rgba(26,154,170,0.4);color:var(--teal);padding:5px 13px;border-radius:20px;font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:1.4rem;}
+.hero-badge::before{content:'●';font-size:0.45rem;animation:blink 2s infinite;}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0.3}}
+.hero-title{font-family:'Lora',serif;font-size:clamp(2.2rem,4.5vw,3.4rem);color:var(--white);font-weight:700;line-height:1.15;margin-bottom:1.2rem;}
+.hero-title em{font-style:italic;color:var(--teal);}
+.hero-desc{color:rgba(255,255,255,0.68);font-size:0.97rem;line-height:1.8;max-width:460px;margin-bottom:2rem;}
+.hero-btns{display:flex;gap:1rem;flex-wrap:wrap;}
+.btn-primary{background:var(--teal);color:var(--white);text-decoration:none;padding:13px 26px;border-radius:8px;font-weight:700;font-size:0.9rem;transition:all 0.25s;box-shadow:0 4px 18px rgba(26,154,170,0.4);display:inline-flex;align-items:center;gap:7px;}
+.btn-primary:hover{background:var(--teal-dark);transform:translateY(-2px);}
+.btn-outline{background:transparent;color:var(--white);text-decoration:none;padding:13px 26px;border-radius:8px;font-weight:600;font-size:0.9rem;border:1.5px solid rgba(255,255,255,0.3);transition:all 0.25s;}
+.btn-outline:hover{background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.6);}
+.hero-stats-card{background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:16px;padding:2rem;backdrop-filter:blur(6px);}
+.hero-stats-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;}
+.hs{text-align:center;padding:1rem;background:rgba(255,255,255,0.05);border-radius:10px;}
+.hs .n{font-family:'Lora',serif;font-size:1.9rem;font-weight:700;color:var(--teal);display:block;line-height:1;}
+.hs .l{font-size:0.72rem;color:rgba(255,255,255,0.5);margin-top:5px;line-height:1.4;}
+.hero-note{margin-top:1.2rem;padding-top:1rem;border-top:1px solid rgba(255,255,255,0.1);font-size:0.8rem;color:rgba(255,255,255,0.4);font-style:italic;text-align:center;}
+
+/* SECTIONS */
+section{padding:5rem 2rem;}
+.si{max-width:1200px;margin:0 auto;}
+.sl{font-size:0.7rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--teal);margin-bottom:0.7rem;}
+.st{font-family:'Lora',serif;font-size:clamp(1.7rem,3.5vw,2.6rem);font-weight:700;line-height:1.2;margin-bottom:1rem;color:var(--navy);}
+.st em{font-style:italic;color:var(--teal);}
+.ss{color:var(--text-muted);font-size:0.95rem;line-height:1.75;max-width:580px;}
+
+/* REALITATE */
+#realitate{background:var(--white);}
+.r-layout{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start;margin-top:2.5rem;}
+.stats-2x2{display:grid;grid-template-columns:1fr 1fr;gap:1rem;}
+.sb{background:var(--navy);border-radius:12px;padding:1.4rem;text-align:center;}
+.sb .n{font-family:'Lora',serif;font-size:1.9rem;font-weight:700;color:var(--teal);display:block;}
+.sb .l{font-size:0.72rem;color:rgba(255,255,255,0.55);margin-top:5px;line-height:1.4;}
+.r-text h3{font-family:'Lora',serif;font-size:1.3rem;color:var(--navy);margin-bottom:0.9rem;font-weight:700;}
+.r-text p{color:var(--text-muted);line-height:1.8;margin-bottom:0.9rem;font-size:0.93rem;}
+.r-text strong{color:var(--navy);}
+
+/* PROBLEMA */
+#problema{background:var(--navy-bg);}
+#problema .sl{color:var(--teal);}#problema .st{color:var(--white);}#problema .ss{color:rgba(255,255,255,0.55);}
+.p-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-top:2.5rem;}
+.pc{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:1.6rem;transition:all 0.25s;}
+.pc:hover{background:rgba(255,255,255,0.1);transform:translateY(-3px);}
+.pc .ic{font-size:1.6rem;margin-bottom:0.9rem;display:block;}
+.pc h4{color:var(--white);font-size:0.92rem;font-weight:700;margin-bottom:0.5rem;}
+.pc p{color:rgba(255,255,255,0.48);font-size:0.81rem;line-height:1.65;}
+
+/* SOLUTIA */
+#solutia{background:var(--cream);}
+.s-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:2.5rem;}
+.sc{background:var(--white);border-radius:12px;padding:1.8rem;box-shadow:0 2px 16px rgba(26,58,92,0.07);border-top:3px solid var(--teal);transition:all 0.25s;}
+.sc:hover{transform:translateY(-4px);box-shadow:0 8px 30px rgba(26,58,92,0.12);}
+.sc .ic{font-size:1.7rem;margin-bottom:0.9rem;display:block;}
+.sc h3{font-family:'Lora',serif;font-size:1.05rem;color:var(--navy);margin-bottom:0.6rem;font-weight:700;}
+.sc p{color:var(--text-muted);font-size:0.83rem;line-height:1.7;}
+
+/* PENTRU CINE */
+#pentru-cine{background:var(--white);}
+.pt-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-top:2.5rem;}
+.ptc{background:var(--gray-light);border-radius:10px;padding:1.4rem;border:1.5px solid transparent;transition:all 0.2s;}
+.ptc:hover{border-color:var(--teal);background:var(--white);}
+.ptc .ic{font-size:1.5rem;margin-bottom:0.7rem;display:block;}
+.ptc h4{font-size:0.9rem;font-weight:700;color:var(--navy);margin-bottom:0.4rem;}
+.ptc p{font-size:0.8rem;color:var(--text-muted);line-height:1.6;}
+
+/* MESAJE */
+#mesaje{background:var(--navy-bg);padding:5rem 2rem;}
+#mesaje .sl{color:var(--teal);}#mesaje .st{color:var(--white);}#mesaje .ss{color:rgba(255,255,255,0.55);}
+.shorts-row{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-top:2rem;}
+.short-card{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;overflow:hidden;}
+.video-wrap{aspect-ratio:9/16;}
+.video-wrap iframe{width:100%;height:100%;border:0;display:block;}
+.poveste-wrap{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;margin-top:3rem;}
+.poveste-vid{border-radius:14px;overflow:hidden;aspect-ratio:16/9;}
+.poveste-vid iframe{width:100%;height:100%;border:0;display:block;}
+.poveste-txt h3{font-family:'Lora',serif;font-size:1.4rem;color:var(--white);font-weight:700;margin-bottom:0.9rem;}
+.poveste-quote{border-left:3px solid var(--teal);padding-left:1rem;font-style:italic;color:rgba(255,255,255,0.65);font-size:0.93rem;line-height:1.75;margin-bottom:1rem;}
+.poveste-txt p{color:rgba(255,255,255,0.5);font-size:0.85rem;line-height:1.8;margin-bottom:0.8rem;}
+
+/* INFO AVC */
+#info-avc{background:var(--white);}
+.fast-card{background:var(--cream);border:1.5px solid var(--border);border-left:4px solid var(--teal);border-radius:12px;padding:1.5rem;margin:1.5rem 0 2rem;}
+.fast-top{display:flex;align-items:center;gap:1rem;margin-bottom:1rem;}
+.fast-top .ic{font-size:1.4rem;}
+.fast-top h3{font-size:1rem;font-weight:700;color:var(--navy);}
+.fast-top p{font-size:0.8rem;color:var(--text-muted);}
+.fast-items{display:flex;gap:0.8rem;flex-wrap:wrap;}
+.fi{background:var(--white);border:1px solid var(--border);border-radius:8px;padding:0.7rem 1rem;display:flex;align-items:center;gap:8px;}
+.fi .lt{font-weight:800;font-size:0.95rem;color:var(--teal);}
+.fi p{font-size:0.78rem;color:var(--text-muted);}
+.fi p strong{color:var(--navy);font-weight:700;}
+.fi.t-item{background:var(--teal);border-color:var(--teal);}
+.fi.t-item .lt{color:var(--white);}
+.fi.t-item p,.fi.t-item p strong{color:rgba(255,255,255,0.9);}
+.avc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:0.5rem;}
+.avc-card{background:var(--white);border-radius:12px;overflow:hidden;box-shadow:0 2px 14px rgba(26,58,92,0.08);border:1px solid var(--border);}
+.avc-card .vid-wrap{aspect-ratio:9/16;}
+.avc-card iframe{width:100%;height:100%;border:0;display:block;}
+.avc-card .vb{padding:1rem;}
+.avc-card h4{font-size:0.87rem;font-weight:700;color:var(--navy);margin-bottom:3px;}
+.avc-card p{font-size:0.77rem;color:var(--text-muted);line-height:1.5;}
+
+/* DE CE NOI */
+#de-ce-noi{background:var(--cream);}
+.dce-layout{display:grid;grid-template-columns:1fr 1.2fr;gap:4rem;align-items:start;margin-top:2.5rem;}
+.dce-box{background:var(--navy);border-radius:14px;padding:2rem;}
+.dce-box blockquote{font-family:'Lora',serif;font-style:italic;font-size:1.1rem;color:var(--white);line-height:1.7;margin-bottom:1.5rem;border-left:3px solid var(--teal);padding-left:1rem;}
+.dce-metrics{display:grid;grid-template-columns:1fr 1fr;gap:0.8rem;}
+.dm{background:rgba(255,255,255,0.07);border-radius:8px;padding:1rem;text-align:center;}
+.dm .n{font-family:'Lora',serif;font-size:1.6rem;font-weight:700;color:var(--teal);display:block;}
+.dm .l{font-size:0.72rem;color:rgba(255,255,255,0.5);margin-top:3px;}
+.dce-list{display:flex;flex-direction:column;gap:1rem;}
+.dce-item{display:flex;align-items:flex-start;gap:12px;}
+.dce-ic{width:38px;height:38px;border-radius:9px;background:var(--teal-light);display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0;}
+.dce-item h4{font-size:0.9rem;font-weight:700;color:var(--navy);margin-bottom:3px;}
+.dce-item p{font-size:0.81rem;color:var(--text-muted);line-height:1.6;}
+
+/* IMPLICA-TE */
+#implica{background:var(--navy-bg);}
+#implica .sl{color:var(--teal);}#implica .st{color:var(--white);}#implica .ss{color:rgba(255,255,255,0.55);}
+.impl-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem;margin-top:2.5rem;}
+.impl-card{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:1.8rem 1.4rem;text-align:center;transition:all 0.25s;}
+.impl-card:hover{background:rgba(255,255,255,0.1);transform:translateY(-4px);}
+.impl-card .ic{font-size:2rem;margin-bottom:0.9rem;display:block;}
+.impl-card h3{font-size:0.93rem;font-weight:700;color:var(--white);margin-bottom:0.7rem;}
+.impl-card p{font-size:0.8rem;color:rgba(255,255,255,0.48);line-height:1.6;margin-bottom:1.2rem;}
+.impl-card a{display:inline-block;background:var(--teal);color:var(--white);padding:8px 18px;border-radius:20px;font-size:0.8rem;font-weight:700;text-decoration:none;transition:background 0.2s;}
+.impl-card a:hover{background:var(--teal-dark);}
+.impl-note{text-align:center;margin-top:2rem;color:rgba(255,255,255,0.5);font-size:0.87rem;}
+.impl-btns{display:flex;justify-content:center;gap:1rem;margin-top:1rem;flex-wrap:wrap;}
+
+/* CONTACT */
+#contact{background:var(--white);}
+.ct-layout{display:grid;grid-template-columns:1fr 1.4fr;gap:4rem;margin-top:2.5rem;}
+.ct-details{display:flex;flex-direction:column;gap:1rem;}
+.ct-item{display:flex;align-items:flex-start;gap:12px;padding:1rem 1.2rem;background:var(--gray-light);border-radius:10px;}
+.ct-ic{width:40px;height:40px;background:var(--teal);border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0;}
+.ct-item strong{display:block;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--text-muted);margin-bottom:2px;}
+.ct-item span{font-size:0.92rem;color:var(--navy);font-weight:600;}
+.prog-box{background:var(--teal-light);border:1px solid rgba(26,154,170,0.2);border-radius:10px;padding:1rem 1.2rem;}
+.prog-box h4{font-size:0.75rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--teal);font-weight:700;margin-bottom:6px;}
+.prog-box p{font-size:0.85rem;color:var(--navy);line-height:1.6;}
+.ct-form{background:var(--white);border-radius:14px;padding:2rem;box-shadow:0 4px 24px rgba(26,58,92,0.08);border:1px solid var(--border);}
+.ct-form h3{font-family:'Lora',serif;font-size:1.3rem;color:var(--navy);margin-bottom:1.5rem;font-weight:700;}
+.form-2{display:grid;grid-template-columns:1fr 1fr;gap:1rem;}
+.fld{display:flex;flex-direction:column;gap:5px;margin-bottom:1rem;}
+.fld label{font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:var(--navy);}
+.fld input,.fld select,.fld textarea{border:1.5px solid var(--border);border-radius:8px;padding:10px 13px;font-family:'Nunito Sans',sans-serif;font-size:0.92rem;color:var(--text);outline:none;transition:border-color 0.2s,box-shadow 0.2s;width:100%;}
+.fld input:focus,.fld select:focus,.fld textarea:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(26,154,170,0.12);}
+.fld textarea{resize:vertical;min-height:110px;}
+.btn-send{width:100%;background:var(--teal);color:var(--white);border:none;padding:13px;border-radius:8px;font-family:'Nunito Sans',sans-serif;font-size:0.95rem;font-weight:700;cursor:pointer;transition:all 0.25s;}
+.btn-send:hover{background:var(--teal-dark);}
+#formSuccess{display:none;background:#e6f4ea;border:1px solid var(--green);color:#2e7a00;padding:0.9rem;border-radius:8px;text-align:center;margin-top:1rem;font-weight:600;font-size:0.9rem;}
+
+/* FOOTER */
+footer{background:var(--navy-dark);padding:3rem 2rem 1.5rem;}
+.ft-inner{max-width:1200px;margin:0 auto;}
+.ft-top{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:3rem;padding-bottom:2rem;border-bottom:1px solid rgba(255,255,255,0.09);margin-bottom:1.5rem;}
+.ft-logo{display:flex;align-items:center;gap:10px;margin-bottom:1rem;}
+.ft-logo-ic{width:34px;height:34px;background:var(--teal);border-radius:7px;display:flex;align-items:center;justify-content:center;font-weight:800;color:var(--white);}
+.ft-logo span{color:var(--white);font-weight:700;font-size:0.9rem;}
+.ft-brand p{font-size:0.82rem;color:rgba(255,255,255,0.45);line-height:1.7;max-width:260px;}
+.ft-col h4{color:var(--white);font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:1rem;}
+.ft-col a{display:block;color:rgba(255,255,255,0.45);text-decoration:none;font-size:0.83rem;padding:3px 0;transition:color 0.2s;}
+.ft-col a:hover{color:var(--teal);}
+.ft-bottom{display:flex;justify-content:space-between;align-items:center;font-size:0.78rem;color:rgba(255,255,255,0.35);flex-wrap:wrap;gap:0.5rem;}
+.ft-bottom a{color:rgba(255,255,255,0.35);text-decoration:none;}
+.ft-bottom a:hover{color:var(--teal);}
+
+.fade-in{opacity:0;transform:translateY(22px);transition:opacity 0.55s ease,transform 0.55s ease;}
+.fade-in.visible{opacity:1;transform:translateY(0);}
+
+@media(max-width:1024px){.impl-grid{grid-template-columns:repeat(2,1fr);}.ft-top{grid-template-columns:1fr 1fr;}}
+@media(max-width:768px){
+  .nav-links{display:none;}.hamburger{display:flex;}
+  .hero-inner{grid-template-columns:1fr;gap:2rem;}.hero-stats-card{display:none;}
+  .r-layout,.poveste-wrap,.dce-layout,.ct-layout{grid-template-columns:1fr;}
+  .p-grid,.pt-grid{grid-template-columns:1fr 1fr;}
+  .s-grid,.shorts-row{grid-template-columns:1fr;}
+  .avc-grid{grid-template-columns:1fr 1fr;}
+  .impl-grid{grid-template-columns:1fr 1fr;}
+  .ft-top{grid-template-columns:1fr;}
+  .form-2{grid-template-columns:1fr;}
+}
+@media(max-width:480px){.p-grid,.pt-grid,.avc-grid,.impl-grid{grid-template-columns:1fr;}}
+
+/* ===== ANA WIDGET ===== */
+#ana-fab{position:fixed;bottom:24px;right:24px;z-index:9999;display:flex;flex-direction:column;align-items:flex-end;gap:10px;}
+#ana-fab-btn{width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,var(--navy),var(--teal));border:none;cursor:pointer;box-shadow:0 6px 24px rgba(26,58,92,0.4);display:flex;align-items:center;justify-content:center;transition:transform 0.2s,box-shadow 0.2s;position:relative;}
+#ana-fab-btn:hover{transform:scale(1.08);box-shadow:0 10px 32px rgba(26,58,92,0.5);}
+#ana-fab-btn svg{width:26px;height:26px;fill:white;}
+#ana-fab-btn .ico-open{display:flex;}#ana-fab-btn .ico-close{display:none;}
+#ana-fab-btn.open .ico-open{display:none;}#ana-fab-btn.open .ico-close{display:flex;}
+#ana-fab-dot{position:absolute;top:4px;right:4px;width:12px;height:12px;background:#4ade80;border-radius:50%;border:2px solid white;animation:ana-pulse-dot 2s infinite;}
+@keyframes ana-pulse-dot{0%,100%{box-shadow:0 0 0 0 rgba(74,222,128,0.5);}50%{box-shadow:0 0 0 5px rgba(74,222,128,0);}}
+#ana-tip{background:white;border-radius:12px;padding:9px 15px;font-size:0.79rem;color:var(--text);box-shadow:0 4px 20px rgba(0,0,0,0.13);white-space:nowrap;cursor:pointer;border:1px solid var(--border);animation:ana-tip-in 0.4s cubic-bezier(0.34,1.56,0.64,1);font-family:'Nunito Sans',sans-serif;}
+#ana-tip strong{color:var(--navy);}
+@keyframes ana-tip-in{from{opacity:0;transform:translateX(10px) scale(0.95);}to{opacity:1;transform:translateX(0) scale(1);}}
+#ana-win{position:fixed;bottom:100px;right:24px;width:360px;max-height:560px;background:#fdfaf6;border-radius:22px;box-shadow:0 20px 60px rgba(26,58,92,0.22);border:1px solid var(--border);display:none;flex-direction:column;overflow:hidden;z-index:9998;animation:ana-win-in 0.35s cubic-bezier(0.34,1.56,0.64,1);font-family:'Nunito Sans',sans-serif;}
+#ana-win.open{display:flex;}
+@keyframes ana-win-in{from{opacity:0;transform:translateY(20px) scale(0.95);}to{opacity:1;transform:translateY(0) scale(1);}}
+.ana-hdr{background:linear-gradient(135deg,var(--navy),#1e4d75);padding:14px 16px;display:flex;align-items:center;gap:11px;}
+.ana-av{width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,var(--teal),#3ab8a8);display:flex;align-items:center;justify-content:center;font-size:20px;border:2px solid rgba(255,255,255,0.2);position:relative;flex-shrink:0;}
+.ana-av-dot{position:absolute;bottom:1px;right:1px;width:10px;height:10px;background:#4ade80;border-radius:50%;border:2px solid var(--navy);}
+.ana-hi{flex:1;}.ana-hn{font-size:0.93rem;color:#fff;font-weight:700;}.ana-hr{font-size:0.69rem;color:rgba(255,255,255,0.55);margin-top:1px;}
+.ana-hl{color:rgba(255,255,255,0.65);font-size:0.69rem;text-decoration:none;background:rgba(255,255,255,0.1);padding:4px 9px;border-radius:10px;transition:background 0.2s;white-space:nowrap;}
+.ana-hl:hover{background:rgba(255,255,255,0.2);color:#fff;}
+.ana-emg{background:linear-gradient(135deg,#dc2626,#b91c1c);color:#fff;padding:6px 14px;font-size:0.7rem;text-align:center;font-weight:600;display:none;}
+.ana-emg.show{display:block;}
+.ana-msgs{flex:1;overflow-y:auto;padding:14px 13px 6px;display:flex;flex-direction:column;gap:9px;min-height:180px;max-height:300px;scroll-behavior:smooth;}
+.ana-msgs::-webkit-scrollbar{width:3px;}.ana-msgs::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px;}
+.ana-msg{display:flex;max-width:88%;animation:ana-msg-in 0.25s ease;}
+@keyframes ana-msg-in{from{opacity:0;transform:translateY(5px);}to{opacity:1;transform:translateY(0);}}
+.ana-msg.bot{align-self:flex-start;}.ana-msg.user{align-self:flex-end;}
+.ana-bbl{padding:9px 13px;border-radius:16px;font-size:0.82rem;line-height:1.55;word-break:break-word;}
+.ana-msg.bot .ana-bbl{background:#f0f4f7;border:1px solid var(--border);color:var(--text);border-bottom-left-radius:4px;}
+.ana-msg.user .ana-bbl{background:linear-gradient(135deg,var(--navy),#1e4d75);color:#fff;border-bottom-right-radius:4px;}
+.ana-msg.bot .ana-bbl strong{color:var(--navy);}
+.ana-msg.bot .ana-bbl em{color:var(--teal);font-style:italic;}
+.ana-typ{display:flex;align-self:flex-start;}.ana-typ-b{background:#f0f4f7;border:1px solid var(--border);border-radius:16px;border-bottom-left-radius:4px;padding:10px 14px;display:flex;gap:4px;align-items:center;}
+.ana-d{width:6px;height:6px;background:var(--teal);border-radius:50%;animation:ana-dot 1.2s infinite;opacity:0.5;}
+.ana-d:nth-child(2){animation-delay:0.2s;}.ana-d:nth-child(3){animation-delay:0.4s;}
+@keyframes ana-dot{0%,80%,100%{transform:translateY(0);opacity:0.4;}40%{transform:translateY(-5px);opacity:1;}}
+.ana-qrs{display:flex;flex-wrap:wrap;gap:5px;padding:7px 13px 9px;border-bottom:1px solid var(--border);}
+.ana-qr{background:var(--gray-light);border:1.5px solid var(--teal);color:var(--teal);padding:4px 10px;border-radius:18px;font-size:0.71rem;cursor:pointer;transition:all 0.2s;font-family:'Nunito Sans',sans-serif;font-weight:700;}
+.ana-qr:hover{background:var(--teal);color:#fff;}
+.ana-inp-row{padding:10px 12px;display:flex;gap:8px;align-items:flex-end;border-top:1px solid var(--border);}
+.ana-inp-wrap{flex:1;background:var(--gray-light);border:1.5px solid var(--border);border-radius:18px;padding:8px 13px;transition:border-color 0.2s,box-shadow 0.2s;display:flex;align-items:flex-end;}
+.ana-inp-wrap:focus-within{border-color:var(--teal);box-shadow:0 0 0 3px rgba(26,154,170,0.12);}
+.ana-ta{border:none;background:transparent;font-family:'Nunito Sans',sans-serif;font-size:0.82rem;color:var(--text);width:100%;resize:none;outline:none;max-height:70px;line-height:1.5;}
+.ana-ta::placeholder{color:#b0b8c0;}
+.ana-snd{width:36px;height:36px;background:linear-gradient(135deg,var(--teal),var(--teal-dark));border:none;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all 0.2s;box-shadow:0 3px 10px rgba(26,154,170,0.35);}
+.ana-snd:hover{transform:scale(1.08);}.ana-snd:disabled{opacity:0.5;cursor:not-allowed;transform:none;}
+.ana-snd svg{width:15px;height:15px;fill:white;margin-left:2px;}
+.ana-note{text-align:center;font-size:0.61rem;color:#b0b8c0;padding:5px 12px 8px;line-height:1.4;}
+@media(max-width:420px){#ana-win{width:calc(100vw - 20px);right:10px;bottom:88px;}#ana-fab{bottom:16px;right:14px;}}
+
+/* WHATSAPP FLOATING */
+#wa-fab{position:fixed;bottom:24px;left:24px;z-index:9999;display:flex;flex-direction:column;align-items:flex-start;gap:10px;}
+#wa-btn{width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,#25d366,#1da851);border:none;cursor:pointer;box-shadow:0 6px 24px rgba(37,211,102,0.4);display:flex;align-items:center;justify-content:center;transition:transform 0.2s,box-shadow 0.2s;text-decoration:none;}
+#wa-btn:hover{transform:scale(1.08);box-shadow:0 10px 32px rgba(37,211,102,0.5);}
+#wa-btn svg{width:30px;height:30px;fill:white;}
+#wa-tip2{background:white;border-radius:12px;padding:9px 15px;font-size:0.79rem;color:var(--text);box-shadow:0 4px 20px rgba(0,0,0,0.13);white-space:nowrap;border:1px solid var(--border);animation:ana-tip-in 0.4s cubic-bezier(0.34,1.56,0.64,1);font-family:'Nunito Sans',sans-serif;}
+#wa-tip2 strong{color:#25d366;}
+@media(max-width:420px){#wa-fab{bottom:16px;left:14px;}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">
+      <div class="nav-logo-icon">V</div>
+      <div class="nav-logo-text">Viata dupa AVC<small>Asociatie Non-Profit · Brasov</small></div>
+    </a>
+    <div class="nav-links">
+      <a href="ghid.html" class="nav-ghid">📖 Ghid AVC</a>
+      <a href="asistentultaupostavc.html" class="nav-ghid" style="background:rgba(90,170,42,0.13)!important;color:#4a9a1a!important;border-color:rgba(90,170,42,0.3)!important;">💙 Asistentul tău post-AVC</a>
+      <a href="#realitate">Realitatea AVC</a>
+      <a href="#solutia">Solutia noastra</a>
+      <a href="#mesaje">Mesaje</a>
+      <a href="#info-avc">Despre AVC</a>
+      <a href="#implica">Implica-te</a>
+      <a href="#contact">Contact</a>
+      <div class="nav-dropdown">
+        <button class="nav-dd-btn">Doneaza <span class="dd-arrow">▾</span></button>
+        <div class="dropdown-menu">
+          <div class="dropdown-menu-inner">
+            <a href="donatie-35.html"><div class="dd-icon g">👤</div><div class="dd-text"><strong>Redirectioneaza 3,5%</strong><span>Persoane fizice · Impozit pe venit</span></div></a>
+            <div class="dd-divider"></div>
+            <a href="donatie-20.html"><div class="dd-icon t">🏢</div><div class="dd-text"><strong>Redirectioneaza 20%</strong><span>Firme · D177 · Impozit pe profit</span></div></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="ghid.html" onclick="toggleMenu()" style="color:var(--teal);font-weight:700;">📖 Ghidul Viata dupa AVC</a>
+  <a href="asistentultaupostavc.html" onclick="toggleMenu()" style="color:#4ade80;font-weight:700;">💙 Asistentul tău post-AVC</a>
+  <a href="#realitate" onclick="toggleMenu()">Realitatea AVC</a>
+  <a href="#solutia" onclick="toggleMenu()">Solutia noastra</a>
+  <a href="#mesaje" onclick="toggleMenu()">Mesaje</a>
+  <a href="#info-avc" onclick="toggleMenu()">Despre AVC</a>
+  <a href="#implica" onclick="toggleMenu()">Implica-te</a>
+  <a href="#contact" onclick="toggleMenu()">Contact</a>
+  <span class="mob-label">Doneaza</span>
+  <a href="donatie-35.html" class="mob-sub-link">→ Redirectioneaza 3,5% (persoane fizice)</a>
+  <a href="donatie-20.html" class="mob-sub-link">→ Redirectioneaza 20% (firme)</a>
+</div>
+
+<section id="hero">
+  <div class="hero-inner">
+    <div class="fade-in">
+      <div class="hero-badge">Brasov, Romania · Infiintat 2024</div>
+      <h1 class="hero-title">Partenerul tau in<br>drumul spre <em>recuperare</em></h1>
+      <p class="hero-desc">Asociatia Viata dupa AVC ofera sprijin real pacientilor si familiilor acestora — de la primele zile dupa externare, prin recuperare, pana la reintegrarea sociala completa. Nu esti singur in acest drum.</p>
+      <div class="hero-btns">
+        <a href="#implica" class="btn-primary">Doneaza acum →</a>
+        <a href="#solutia" class="btn-outline">Descopera solutia</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="realitate">
+  <div class="si">
+    <p class="sl fade-in">Contextul</p>
+    <h2 class="st fade-in">Realitatea AVC-ului in Romania</h2>
+    <p class="ss fade-in">Un accident vascular cerebral schimba complet viata unei persoane in cateva secunde. Si nu doar viata pacientului — ci a intregii familii.</p>
+    <div class="r-layout">
+      <div class="stats-2x2 fade-in">
+        <div class="sb"><span class="n">66.000+</span><span class="l">Cazuri noi de AVC anual in Romania</span></div>
+        <div class="sb"><span class="n">~180</span><span class="l">Cazuri noi in fiecare zi</span></div>
+        <div class="sb"><span class="n">50%</span><span class="l">Abandoneaza recuperarea dupa externare</span></div>
+        <div class="sb"><span class="n">200+</span><span class="l">EUR cost mediu pe zi de recuperare</span></div>
+      </div>
+      <div class="r-text fade-in">
+        <h3>Ce se intampla dupa externare?</h3>
+        <p>Sistemul medical trateaza urgenta. Dar dupa externare, pacientul si familia sunt lasati singuri in fata celei mai dificile perioade: recuperarea. Fara ghidare. Fara plan. Fara un interlocutor care sa ii preia.</p>
+        <p>Fiecare zi pierduta din primele 3-6 luni — fereastra critica de plasticitate cerebrala — reduce ireversibil sansele de recuperare. Aceasta este urgenta pe care o adresam.</p>
+        <p>AVC-ul este <strong>prima cauza de dizabilitate pe termen lung</strong> si a doua cauza de deces in Romania.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="problema">
+  <div class="si">
+    <p class="sl fade-in">Problema reala din sistem</p>
+    <h2 class="st fade-in">Ce lipseste cu <em>adevarat</em></h2>
+    <p class="ss fade-in">Nu este vorba de lipsa de medici sau spitale. Este vorba de absenta unui sistem care sa preia pacientul dupa ce usa spitalului se inchide.</p>
+    <div class="p-grid">
+      <div class="pc fade-in"><span class="ic">🔍</span><h4>Lipsa informatiei</h4><p>Familiile nu stiu ce pasi urmeaza, ce optiuni exista, cat costa recuperarea. Totul se invata din mers, cu greseli si costuri uriase.</p></div>
+      <div class="pc fade-in"><span class="ic">💸</span><h4>Costurile prohibitive</h4><p>Recuperarea completa poate depasi 200 EUR pe zi si dureaza luni. Pentru majoritatea familiilor, acest efort financiar este imposibil fara ajutor.</p></div>
+      <div class="pc fade-in"><span class="ic">🏥</span><h4>Acces limitat la recuperare</h4><p>Putine centre specializate, distribuite inegal. Liste de asteptare, distante mari, locuri insuficiente fata de nevoia reala.</p></div>
+      <div class="pc fade-in"><span class="ic">🧠</span><h4>Absenta continuitatii</h4><p>Nu exista un sistem clar care sa ghideze pacientul dupa externare. Fara continuitate, multi stagneaza sau regreseaza.</p></div>
+      <div class="pc fade-in"><span class="ic">🖤</span><h4>Lipsa suportului emotional</h4><p>Pacientii si familiile se confrunta cu anxietate, frustrare si izolare. Suportul psihologic lipseste aproape complet din sistem.</p></div>
+      <div class="pc fade-in"><span class="ic">🤝</span><h4>Izolarea sociala</h4><p>Pierderea mobilitatii si a capacitatii de comunicare duc la retragere sociala. Izolarea agraveaza starea si franeaza recuperarea.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="solutia">
+  <div class="si">
+    <p class="sl fade-in">Solutia noastra</p>
+    <h2 class="st fade-in">Un sistem integrat de sprijin <em>post-AVC</em></h2>
+    <p class="ss fade-in">Am construit solutia care lipsea — pornind de la o experienta personala directa, nu din teorie. Trei programe complementare, un singur scop: recuperarea reala.</p>
+    <div class="s-grid">
+      <div class="sc fade-in"><span class="ic">🏥</span><h3>Recuperare Medicala</h3><p>Echipe mobile interdisciplinare la domiciliu — kinetoterapeut, logoped, psiholog. Acces la centre specializate din tara si din strainatate. Sprijin pentru achizitia dispozitivelor medicale.</p></div>
+      <div class="sc fade-in"><span class="ic">📋</span><h3>Informare si Ghidare</h3><p>Consultanta pentru pacienti si familii despre drepturi, pasi de urmat si optiuni disponibile. Platforma web cu informatii verificate medical. Ghiduri practice pentru fiecare etapa.</p></div>
+      <div class="sc fade-in"><span class="ic">🤝</span><h3>Reintegrare Sociala</h3><p>Intalniri saptamanale de grup, tabere anuale, consiliere psihologica. O comunitate activa de pacienti si familii care se sprijina reciproc si recapata increderea.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="pentru-cine">
+  <div class="si">
+    <p class="sl fade-in">Pentru cine este acest proiect</p>
+    <h2 class="st fade-in">Suntem alaturi de toti cei <em>afectati</em></h2>
+    <p class="ss fade-in">AVC-ul nu afecteaza doar pacientul. Schimba viata intregii familii. Programele noastre acopera fiecare categorie cu nevoi specifice.</p>
+    <div class="pt-grid">
+      <div class="ptc fade-in"><span class="ic">🏥</span><h4>Pacienti recent externati</h4><p>Cei aflati in primele saptamani dupa AVC, care au cea mai mare nevoie de ghidare rapida si plan de recuperare personalizat.</p></div>
+      <div class="ptc fade-in"><span class="ic">🔄</span><h4>Pacienti in recuperare activa</h4><p>Cei care urmeaza deja un program de recuperare si au nevoie de coordonare interdisciplinara si suport continuu.</p></div>
+      <div class="ptc fade-in"><span class="ic">👪</span><h4>Familii si ingrijitori</h4><p>Parteneri de viata, parinti sau copii care devin brusc ingrijitori fara pregatire. Le oferim ghidare practica si suport emotional.</p></div>
+      <div class="ptc fade-in"><span class="ic">💙</span><h4>Pacienti cu resurse limitate</h4><p>Cei care nu pot suporta costul recuperarii private. Asociatia este mecanismul lor de acces echitabil la servicii de calitate.</p></div>
+      <div class="ptc fade-in"><span class="ic">🏠</span><h4>Pacienti la domiciliu</h4><p>Cei care nu se pot deplasa la centre specializate. Echipele noastre mobile vin direct la ei, oriunde in Brasov.</p></div>
+      <div class="ptc fade-in"><span class="ic">⭐</span><h4>Pacienti in reintegrare</h4><p>Cei care au depasit faza acuta si au nevoie de sprijin pentru reconectarea cu viata sociala si recastigarea independentei.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="de-ce-noi">
+  <div class="si">
+    <p class="sl fade-in">De ce este nevoie de noi</p>
+    <h2 class="st fade-in">Ce facem <em>diferit</em></h2>
+    <p class="ss fade-in">Nu suntem o organizatie construita in jurul unei idei bune. Suntem construiti in jurul unei dureri reale si al determinarii de a face mai usor drumul pe care l-am parcurs singuri.</p>
+    <div class="dce-layout">
+      <div class="dce-box fade-in">
+        <blockquote>"Nu construim o teorie. Construim solutia care ne-a lipsit."</blockquote>
+        <div class="dce-metrics">
+          <div class="dm"><span class="n">120+</span><span class="l">Pacienti sprijiniti pe an</span></div>
+          <div class="dm"><span class="n">200+</span><span class="l">Familii consiliate</span></div>
+          <div class="dm"><span class="n">52</span><span class="l">Intalniri de grup anual</span></div>
+          <div class="dm"><span class="n">2</span><span class="l">Tabere de reintegrare pe an</span></div>
+        </div>
+      </div>
+      <div class="dce-list fade-in">
+        <div class="dce-item"><div class="dce-ic">❤️</div><div><h4>Origine autentica</h4><p>Fondat de oameni care au trait personal realitatea post-AVC. Nu gestionam o problema abstracta — o cunoastem din interior.</p></div></div>
+        <div class="dce-item"><div class="dce-ic">🎯</div><div><h4>Specializare exclusiva pe AVC</h4><p>Nu suntem un ONG generalist. Suntem dedicati exclusiv AVC-ului — o afectiune cu nevoi specifice care merita expertiza profunda.</p></div></div>
+        <div class="dce-item"><div class="dce-ic">🔍</div><div><h4>Transparenta totala</h4><p>Fiecare euro primit este urmarit si raportat. Donatorii si partenerii stiu exact cum sunt utilizate resursele.</p></div></div>
+        <div class="dce-item"><div class="dce-ic">🌿</div><div><h4>Model scalabil national</h4><p>Construim in Brasov un model replicabil in orice judet din Romania. Fiecare succes local este o baza pentru extindere nationala.</p></div></div>
+        <div class="dce-item"><div class="dce-ic">🤝</div><div><h4>Complement al sistemului public</h4><p>Nu dublam ce face statul — acoperim golurile pe care sistemul public nu le poate acoperi, acolo unde are cea mai mare nevoie.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POVESTEA UNUI PACIENT -->
+<section id="mesaje" style="background:var(--navy-bg);">
+  <div class="si">
+    <p class="sl fade-in">Povestea unui pacient</p>
+    <h2 class="st fade-in" style="color:var(--white)">O poveste <em style="color:var(--teal)">reala</em></h2>
+    <p class="ss fade-in">Aceasta este povestea care a stat la baza infiintarii asociatiei. Nu un caz izolat — ci realitatea a mii de familii din Romania.</p>
+    <div class="poveste-wrap">
+      <div class="poveste-vid fade-in"><iframe src="https://www.youtube.com/embed/H-lzgqa78e8" allowfullscreen loading="lazy"></iframe></div>
+      <div class="poveste-txt fade-in">
+        <h3>De la terapie intensiva la o noua viata</h3>
+        <div class="poveste-quote">"Cea mai mare dificultate nu a fost recuperarea fizica. A fost lipsa totala de ghidare."</div>
+        <p>5 zile la terapie intensiva. 14 zile de spitalizare. Externarea cu un dosar medical si nicio directie clara. Doua luni de recuperare langa Brasov, trei luni in Italia.</p>
+        <p>A reusit sa mearga din nou. A reusit sa vorbeasca din nou. Mana a ramas afectata. Viata nu a mai fost niciodata la fel.</p>
+        <p>Dar cel mai dificil nu a fost efortul fizic. A fost ca <strong style="color:var(--white)">nimeni nu stia ce urmeaza.</strong> Ce drepturi exista. La ce sa se astepte. Cat va costa. Unde sa mearga.</p>
+        <a href="#contact" class="btn-primary" style="margin-top:1.4rem;display:inline-flex;">Ai nevoie de ajutor? Contacteaza-ne →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECTIUNEA ANA ===== -->
+<section id="asistent-avc" style="background:linear-gradient(160deg,var(--navy-dark) 0%,#1a3a5c 60%,#1a4a5a 100%);padding:5rem 2rem;position:relative;overflow:hidden;">
+  <div style="position:absolute;top:-80px;right:-80px;width:400px;height:400px;background:radial-gradient(circle,rgba(26,154,170,0.12) 0%,transparent 70%);border-radius:50%;"></div>
+  <div style="position:absolute;bottom:-60px;left:-60px;width:300px;height:300px;background:radial-gradient(circle,rgba(255,255,255,0.04) 0%,transparent 70%);border-radius:50%;"></div>
+  <div class="si" style="position:relative;z-index:1;">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;">
+
+      <!-- Stanga: text + chat live -->
+      <div class="fade-in">
+        <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(26,154,170,0.18);border:1px solid rgba(26,154,170,0.4);color:var(--teal);padding:5px 14px;border-radius:20px;font-size:0.7rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:1.4rem;">
+          <span style="width:7px;height:7px;background:#4ade80;border-radius:50%;animation:blink 2s infinite;"></span>
+          Disponibila 24/7
+        </div>
+        <h2 style="font-family:'Lora',serif;font-size:clamp(1.8rem,3.5vw,2.8rem);color:var(--white);font-weight:700;line-height:1.15;margin-bottom:1rem;">
+          Ana — asistentul tau<br><em style="color:var(--teal);font-style:italic;">post-AVC</em>
+        </h2>
+        <p style="color:rgba(255,255,255,0.65);font-size:0.95rem;line-height:1.8;margin-bottom:1.8rem;">
+          Nu esti singur in acest drum. Ana este consilierul nostru digital, disponibil oricand ai o intrebare — despre recuperare, drepturi, familie sau orice te preocupa acum.
+        </p>
+
+        <!-- Ce poate face -->
+        <div style="display:flex;flex-direction:column;gap:0.7rem;margin-bottom:2rem;">
+          <div style="display:flex;align-items:flex-start;gap:10px;">
+            <span style="color:var(--teal);font-size:1rem;flex-shrink:0;">✓</span>
+            <span style="font-size:0.88rem;color:rgba(255,255,255,0.75);">Raspunde la intrebari despre recuperare si tratament</span>
+          </div>
+          <div style="display:flex;align-items:flex-start;gap:10px;">
+            <span style="color:var(--teal);font-size:1rem;flex-shrink:0;">✓</span>
+            <span style="font-size:0.88rem;color:rgba(255,255,255,0.75);">Explica drepturi legale si beneficii disponibile in Romania</span>
+          </div>
+          <div style="display:flex;align-items:flex-start;gap:10px;">
+            <span style="color:var(--teal);font-size:1rem;flex-shrink:0;">✓</span>
+            <span style="font-size:0.88rem;color:rgba(255,255,255,0.75);">Ghideaza familiile si ingrijitorii pas cu pas</span>
+          </div>
+          <div style="display:flex;align-items:flex-start;gap:10px;">
+            <span style="color:var(--teal);font-size:1rem;flex-shrink:0;">✓</span>
+            <span style="font-size:0.88rem;color:rgba(255,255,255,0.75);">Ofera sprijin emotional si directie in momentele dificile</span>
+          </div>
+          <div style="display:flex;align-items:flex-start;gap:10px;">
+            <span style="color:var(--teal);font-size:1rem;flex-shrink:0;">✓</span>
+            <span style="font-size:0.88rem;color:rgba(255,255,255,0.75);">Bazata pe Ghidul Viata dupa AVC si cunostinte medicale internationale</span>
+          </div>
+        </div>
+
+        <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+          <a href="asistentultaupostavc.html" class="btn-primary">💙 Deschide conversatia completa →</a>
+          <button onclick="anaToggle()" style="background:transparent;border:1.5px solid rgba(255,255,255,0.3);color:rgba(255,255,255,0.85);padding:13px 22px;border-radius:8px;font-family:'Nunito Sans',sans-serif;font-size:0.88rem;font-weight:600;cursor:pointer;transition:all 0.25s;" onmouseover="this.style.borderColor='rgba(255,255,255,0.7)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.3)'">Intreaba acum ↗</button>
+        </div>
+      </div>
+
+      <!-- Dreapta: chat embed live -->
+      <div class="fade-in">
+        <div style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);border-radius:20px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,0.25);">
+
+          <!-- Header Ana embed -->
+          <div style="background:linear-gradient(135deg,rgba(26,58,92,0.9),rgba(26,77,117,0.9));padding:14px 18px;display:flex;align-items:center;gap:12px;border-bottom:1px solid rgba(255,255,255,0.08);">
+            <div style="width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,var(--teal),#3ab8a8);display:flex;align-items:center;justify-content:center;font-size:20px;border:2px solid rgba(255,255,255,0.2);position:relative;flex-shrink:0;">
+              🌿
+              <div style="position:absolute;bottom:1px;right:1px;width:10px;height:10px;background:#4ade80;border-radius:50%;border:2px solid #1a3a5c;"></div>
+            </div>
+            <div style="flex:1;">
+              <div style="font-size:0.93rem;color:#fff;font-weight:700;font-family:'Nunito Sans',sans-serif;">Ana</div>
+              <div style="font-size:0.68rem;color:rgba(255,255,255,0.55);font-family:'Nunito Sans',sans-serif;">Consilier Viata dupa AVC · online acum</div>
+            </div>
+            <div style="width:8px;height:8px;background:#4ade80;border-radius:50%;animation:blink 2s infinite;"></div>
+          </div>
+
+          <!-- Mesaj initial embed -->
+          <div style="padding:16px 16px 8px;background:rgba(0,0,0,0.15);">
+            <div style="display:flex;gap:8px;margin-bottom:12px;">
+              <div style="background:rgba(240,244,247,0.12);border:1px solid rgba(255,255,255,0.1);border-radius:14px;border-bottom-left-radius:4px;padding:10px 14px;font-size:0.82rem;color:rgba(255,255,255,0.88);line-height:1.55;font-family:'Nunito Sans',sans-serif;">
+                Buna ziua! Sunt <strong style="color:var(--teal);">Ana</strong> 💙<br>
+                Sunt aici sa va ajut cu orice intrebare despre viata dupa AVC. Cu ce pot incepe?
+              </div>
+            </div>
+
+            <!-- Intrebari rapide embed -->
+            <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px;">
+              <button onclick="anaEmbedQ('Ce fac imediat dupa externare?')" style="background:rgba(26,154,170,0.2);border:1px solid rgba(26,154,170,0.4);color:var(--teal);padding:5px 11px;border-radius:16px;font-size:0.72rem;cursor:pointer;font-family:'Nunito Sans',sans-serif;font-weight:600;transition:all 0.2s;" onmouseover="this.style.background='rgba(26,154,170,0.4)'" onmouseout="this.style.background='rgba(26,154,170,0.2)'">🏥 Dupa externare</button>
+              <button onclick="anaEmbedQ('Ce drepturi legale am dupa AVC in Romania?')" style="background:rgba(26,154,170,0.2);border:1px solid rgba(26,154,170,0.4);color:var(--teal);padding:5px 11px;border-radius:16px;font-size:0.72rem;cursor:pointer;font-family:'Nunito Sans',sans-serif;font-weight:600;transition:all 0.2s;" onmouseover="this.style.background='rgba(26,154,170,0.4)'" onmouseout="this.style.background='rgba(26,154,170,0.2)'">📋 Drepturi legale</button>
+              <button onclick="anaEmbedQ('Cum pot ajuta familia unui pacient AVC?')" style="background:rgba(26,154,170,0.2);border:1px solid rgba(26,154,170,0.4);color:var(--teal);padding:5px 11px;border-radius:16px;font-size:0.72rem;cursor:pointer;font-family:'Nunito Sans',sans-serif;font-weight:600;transition:all 0.2s;" onmouseover="this.style.background='rgba(26,154,170,0.4)'" onmouseout="this.style.background='rgba(26,154,170,0.2)'">👨‍👩‍👧 Pentru familie</button>
+              <button onclick="anaEmbedQ('Ma simt coplesit de situatie, nu stiu ce sa fac.')" style="background:rgba(26,154,170,0.2);border:1px solid rgba(26,154,170,0.4);color:var(--teal);padding:5px 11px;border-radius:16px;font-size:0.72rem;cursor:pointer;font-family:'Nunito Sans',sans-serif;font-weight:600;transition:all 0.2s;" onmouseover="this.style.background='rgba(26,154,170,0.4)'" onmouseout="this.style.background='rgba(26,154,170,0.2)'">😔 Ma simt coplesit</button>
+            </div>
+
+            <!-- Input embed -->
+            <div style="display:flex;gap:8px;align-items:center;">
+              <div style="flex:1;background:rgba(255,255,255,0.08);border:1.5px solid rgba(255,255,255,0.15);border-radius:20px;padding:9px 14px;display:flex;align-items:center;transition:border-color 0.2s;" id="embed-wrap" onfocus="this.style.borderColor='var(--teal)'" onblur="this.style.borderColor='rgba(255,255,255,0.15)'">
+                <input type="text" id="ana-embed-inp" placeholder="Scrieti intrebarea dvs. aici…" maxlength="400"
+                  style="border:none;background:transparent;font-family:'Nunito Sans',sans-serif;font-size:0.82rem;color:#fff;width:100%;outline:none;"
+                  onkeydown="if(event.key==='Enter')anaEmbedSend()"
+                  placeholder="Scrieti intrebarea dvs. aici…">
+              </div>
+              <button onclick="anaEmbedSend()" style="width:38px;height:38px;background:linear-gradient(135deg,var(--teal),var(--teal-dark));border:none;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 3px 10px rgba(26,154,170,0.4);transition:transform 0.2s;" onmouseover="this.style.transform='scale(1.08)'" onmouseout="this.style.transform='scale(1)'">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="white"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <div style="text-align:center;padding:8px 14px 12px;font-size:0.62rem;color:rgba(255,255,255,0.3);font-family:'Nunito Sans',sans-serif;">
+            Informatii orientative — nu inlocuiesc sfatul medicului · Urgente: 112
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="ghid" style="background:var(--cream);padding:5rem 2rem;">
+  <div class="si">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;">
+      <div class="fade-in">
+        <p class="sl">Resursa gratuita</p>
+        <h2 class="st">Ghidul <em>Viata dupa AVC</em></h2>
+        <p class="ss" style="margin-bottom:1.5rem;">Tot ce trebuie sa stii dupa externare — intr-un singur document practic. Pasi concreti, drepturi, resurse si ghid pentru familie. Scris pentru pacienti si apropiati, nu pentru medici.</p>
+        <div style="display:flex;flex-direction:column;gap:0.7rem;margin-bottom:2rem;">
+          <div style="display:flex;align-items:center;gap:10px;"><span style="color:var(--teal);font-size:1rem;">✓</span><span style="font-size:0.9rem;color:var(--text);">Primii pasi dupa externare</span></div>
+          <div style="display:flex;align-items:center;gap:10px;"><span style="color:var(--teal);font-size:1rem;">✓</span><span style="font-size:0.9rem;color:var(--text);">Recuperare medicala — optiuni si acces</span></div>
+          <div style="display:flex;align-items:center;gap:10px;"><span style="color:var(--teal);font-size:1rem;">✓</span><span style="font-size:0.9rem;color:var(--text);">Drepturi legale si beneficii</span></div>
+          <div style="display:flex;align-items:center;gap:10px;"><span style="color:var(--teal);font-size:1rem;">✓</span><span style="font-size:0.9rem;color:var(--text);">Ghid practic pentru familie si ingrijitori</span></div>
+          <div style="display:flex;align-items:center;gap:10px;"><span style="color:var(--teal);font-size:1rem;">✓</span><span style="font-size:0.9rem;color:var(--text);">Resurse utile din Romania</span></div>
+        </div>
+        <a href="ghid.html" class="btn-primary">📖 Descarca ghidul gratuit →</a>
+      </div>
+      <div class="fade-in" style="background:linear-gradient(135deg,var(--navy-dark),var(--navy));border-radius:16px;padding:2.5rem;text-align:center;">
+        <div style="font-size:5rem;margin-bottom:1rem;">📖</div>
+        <h3 style="font-family:'Lora',serif;color:var(--white);font-size:1.3rem;font-weight:700;margin-bottom:0.5rem;">Ghidul Viata dupa AVC</h3>
+        <p style="color:rgba(255,255,255,0.55);font-size:0.82rem;margin-bottom:1.5rem;">Editia 2025 · Asociatia Viata dupa AVC</p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.8rem;margin-bottom:1.5rem;">
+          <div style="background:rgba(255,255,255,0.08);border-radius:8px;padding:0.8rem;"><span style="font-family:'Lora',serif;font-size:1.4rem;font-weight:700;color:var(--teal);display:block;">100%</span><span style="font-size:0.7rem;color:rgba(255,255,255,0.5);">Gratuit</span></div>
+          <div style="background:rgba(255,255,255,0.08);border-radius:8px;padding:0.8rem;"><span style="font-family:'Lora',serif;font-size:1.4rem;font-weight:700;color:var(--teal);display:block;">2025</span><span style="font-size:0.7rem;color:rgba(255,255,255,0.5);">Actualizat</span></div>
+        </div>
+        <a href="ghid.html" style="display:block;background:var(--teal);color:var(--white);padding:12px 24px;border-radius:8px;text-decoration:none;font-weight:700;font-size:0.9rem;" onmouseover="this.style.background='var(--teal-dark)'" onmouseout="this.style.background='var(--teal)'">Descarca acum — Gratuit</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CE TREBUIE SA STII -->
+<section id="info-avc">
+  <div class="si">
+    <p class="sl fade-in">Ce trebuie sa stii</p>
+    <h2 class="st fade-in">Informatii despre <em>AVC</em></h2>
+    <p class="ss fade-in">Informarea corecta salveaza vieti. Cu cat stii mai mult despre AVC, cu atat poti reactiona mai rapid.</p>
+    <div class="fast-card fade-in" style="display:none;">
+      <div class="fast-top"><span class="ic">🚨</span><div><h3>Recunoaste semnele AVC — Actioneaza FAST</h3><p>La primele semne, suna imediat la <strong>112</strong>. Nu astepta. Nu conduce singur la spital. Fiecare minut conteaza.</p></div></div>
+      <div class="fast-items">
+        <div class="fi"><span class="lt">F</span><p><strong>Fata</strong> Asimetrie, zambet stramb</p></div>
+        <div class="fi"><span class="lt">A</span><p><strong>Brate</strong> Slabiciune sau amortela</p></div>
+        <div class="fi"><span class="lt">S</span><p><strong>Vorbire</strong> Confuza sau imposibila</p></div>
+        <div class="fi t-item"><span class="lt">T</span><p><strong>Timp</strong> Suna la 112 ACUM</p></div>
+      </div>
+    </div>
+    <div class="avc-grid">
+      <div class="avc-card fade-in"><div class="vid-wrap"><iframe src="https://www.youtube.com/embed/oOv3Nzq756M" allowfullscreen loading="lazy"></iframe></div><div class="vb"><h4>Cum apare un AVC</h4><p>Ce se intampla in creier in momentul unui accident vascular cerebral</p></div></div>
+      <div class="avc-card fade-in"><div class="vid-wrap"><iframe src="https://www.youtube.com/embed/ABagOajxnIs" allowfullscreen loading="lazy"></iframe></div><div class="vb"><h4>Cum ne poate afecta un AVC</h4><p>Efectele unui accident vascular cerebral asupra corpului si mintii</p></div></div>
+      <div class="avc-card fade-in"><div class="vid-wrap"><iframe src="https://www.youtube.com/embed/FVnqXCC1tis" allowfullscreen loading="lazy"></iframe></div><div class="vb"><h4>Recomandari pentru pacientii post-AVC</h4><p>Ce trebuie sa stie fiecare pacient si familie dupa externare</p></div></div>
+      <div class="avc-card fade-in"><div class="vid-wrap"><iframe src="https://www.youtube.com/embed/r3-NqtmgcpU" allowfullscreen loading="lazy"></iframe></div><div class="vb"><h4>Cum afecteaza vorbirea un AVC</h4><p>Afazia si tulburarile de comunicare dupa un accident vascular cerebral</p></div></div>
+      <div class="avc-card fade-in"><div class="vid-wrap"><iframe src="https://www.youtube.com/embed/jd1xUC9-hUc" allowfullscreen loading="lazy"></iframe></div><div class="vb"><h4>Rolul familiei pentru pacientii post-AVC</h4><p>Cum pot familia si ingrijitorii sa sprijine recuperarea</p></div></div>
+      <div class="avc-card fade-in"><div class="vid-wrap"><iframe src="https://www.youtube.com/embed/Jo3fzQvLxvw" allowfullscreen loading="lazy"></iframe></div><div class="vb"><h4>Cand trebuie inceputa recuperarea post-AVC</h4><p>De ce fereastra critica de recuperare este atat de importanta</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- MESAJE DE INCURAJARE -->
+<section style="background:var(--navy-bg);padding:5rem 2rem;">
+  <div class="si">
+    <p class="sl fade-in">Mesaje de incurajare</p>
+    <h2 class="st fade-in" style="color:var(--white)">Voci pentru <em style="color:var(--teal)">pacienti</em></h2>
+    <p class="ss fade-in">Mesaje de speranta, curaj si motivatie pentru toti cei care trec prin recuperarea post-AVC. Nu esti singur in acest drum.</p>
+    <div class="shorts-row fade-in">
+      <div class="short-card"><div class="video-wrap"><iframe src="https://www.youtube.com/embed/3kmqciEv3PU" allowfullscreen loading="lazy"></iframe></div></div>
+      <div class="short-card"><div class="video-wrap"><iframe src="https://www.youtube.com/embed/UvvUQFh73Hk" allowfullscreen loading="lazy"></iframe></div></div>
+      <div class="short-card"><div class="video-wrap"><iframe src="https://www.youtube.com/embed/Ujyo1V2QQhg" allowfullscreen loading="lazy"></iframe></div></div>
+    </div>
+    <div class="shorts-row fade-in" style="margin-top:1.2rem">
+      <div class="short-card"><div class="video-wrap"><iframe src="https://www.youtube.com/embed/0k6vR98Oca8" allowfullscreen loading="lazy"></iframe></div></div>
+      <div class="short-card"><div class="video-wrap"><iframe src="https://www.youtube.com/embed/G0WwsI91N9Q" allowfullscreen loading="lazy"></iframe></div></div>
+      <div class="short-card"><div class="video-wrap"><iframe src="https://www.youtube.com/embed/9Ep35SK-3cE" allowfullscreen loading="lazy"></iframe></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="implica">
+  <div class="si">
+    <p class="sl fade-in">Cum te poti implica</p>
+    <h2 class="st fade-in" style="color:var(--white)">Fiecare contributie <em style="color:var(--teal)">conteaza</em></h2>
+    <p class="ss fade-in">Exista mai multe moduri in care poti sustine asociatia. Fiecare gest face diferenta.</p>
+    <div class="impl-grid">
+      <div class="impl-card fade-in"><span class="ic">🏦</span><h3>Donatie directa</h3><p>Vireaza direct in contul asociatiei: <strong style="color:var(--white);display:block;margin-top:6px;font-size:0.85rem;">RO57 RNCB 0303 1808 8567 0001</strong><span style="font-size:0.75rem;opacity:0.6;">BCR · Asociatia Viata dupa AVC</span></p><a href="#contact">Contacteaza-ne</a></div>
+      <div class="impl-card fade-in"><span class="ic">📊</span><h3>Redirectioneaza 3,5%</h3><p>Directioneaza 3,5% din impozitul pe venit — fara niciun cost suplimentar pentru tine.</p><a href="donatie-35.html">Completeaza acum</a></div>
+      <div class="impl-card fade-in"><span class="ic">🏢</span><h3>Sponsorizare companie</h3><p>Redirectioneaza pana la 20% din impozitul pe profit catre asociatia noastra prin D177.</p><a href="donatie-20.html">Incepe acum</a></div>
+      <div class="impl-card fade-in"><span class="ic">🤝</span><h3>Voluntariat</h3><p>Alatura-te echipei noastre la evenimente, activitati si campanii de constientizare.</p><a href="#contact">Contacteaza-ne</a></div>
+    </div>
+    <div class="impl-note fade-in">Ai intrebari despre cum te poti implica? Scrie-ne si iti raspundem in 24 de ore.
+      <div class="impl-btns"><a href="#implica" class="btn-primary">Doneaza acum</a><a href="#contact" class="btn-outline" style="border-color:rgba(255,255,255,0.3);color:var(--white)">Scrie-ne</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="si">
+    <p class="sl fade-in">Contact</p>
+    <h2 class="st fade-in">Suntem aici <em>pentru tine</em></h2>
+    <p class="ss fade-in">Nu stii de unde sa incepi? Scrie-ne sau suna-ne. Raspundem in maximum 24 de ore.</p>
+    <div class="ct-layout">
+      <div class="ct-details fade-in">
+        <div class="ct-item"><div class="ct-ic">📧</div><div><strong>Email</strong><span>viatadupaavc@gmail.com</span></div></div>
+        <div class="ct-item"><div class="ct-ic">📞</div><div><strong>Telefon</strong><span>0741 507 884</span></div></div>
+        <div class="ct-item"><div class="ct-ic">📍</div><div><strong>Sediu</strong><span>Brasov, Romania</span></div></div>
+        <div class="ct-item"><div class="ct-ic">🌐</div><div><strong>Website</strong><span>viatadupaavc.ro</span></div></div>
+        <div class="prog-box"><h4>Program raspuns</h4><p>Luni – Vineri: 9:00 – 18:00<br>Raspundem in maximum 24 de ore</p></div>
+        <a href="https://wa.me/40741507884?text=Buna%20ziua!%20Am%20o%20intrebare%20despre%20viata%20dupa%20AVC." target="_blank" style="display:flex;align-items:center;gap:12px;padding:1rem 1.2rem;background:#e8fef0;border:1.5px solid #25d366;border-radius:10px;text-decoration:none;transition:all 0.2s;" onmouseover="this.style.background='#d4fce3'" onmouseout="this.style.background='#e8fef0'">
+          <div style="width:40px;height:40px;background:#25d366;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0;">💬</div>
+          <div><strong style="display:block;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.06em;color:#1da851;margin-bottom:2px;">WhatsApp</strong><span style="font-size:0.92rem;color:#1a3a2a;font-weight:600;">Scrie-ne direct pe WhatsApp</span></div>
+        </a>
+      </div>
+      <div class="ct-form fade-in">
+        <h3>Trimite-ne un mesaj</h3>
+        <form name="contact" netlify netlify-honeypot="bot-field" onsubmit="handleSubmit(event)">
+          <input type="hidden" name="form-name" value="contact">
+          <input name="bot-field" style="display:none">
+          <div class="form-2">
+            <div class="fld"><label>Nume *</label><input type="text" name="fname" id="fname" required placeholder="Prenume Nume"></div>
+            <div class="fld"><label>Telefon</label><input type="tel" name="fphone" id="fphone" placeholder="07xx xxx xxx"></div>
+          </div>
+          <div class="fld"><label>Email *</label><input type="email" name="femail" id="femail" required placeholder="adresa@email.ro"></div>
+          <div class="fld"><label>Subject</label>
+            <select name="fsubject" id="fsubject">
+              <option value="">Selecteaza subiectul</option>
+              <option>Am nevoie de ajutor pentru un pacient</option>
+              <option>Vreau sa devin colaborator</option>
+              <option>Vreau sa sponsorizez asociatia</option>
+              <option>Voluntariat</option>
+              <option>Alta intrebare</option>
+            </select>
+          </div>
+          <div class="fld"><label>Mesaj *</label><textarea name="fmessage" id="fmessage" required placeholder="Scrie-ne mesajul tau..."></textarea></div>
+          <button type="submit" class="btn-send">Trimite mesajul</button>
+          <div id="formSuccess">Mesajul a fost trimis! Iti raspundem in 24 de ore.</div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="ft-inner">
+    <div class="ft-top">
+      <div class="ft-brand">
+        <div class="ft-logo"><div class="ft-logo-ic">V</div><span>Viata dupa AVC</span></div>
+        <p>Partenerul tau in drumul spre recuperare. Sprijin real pentru pacienti si familii din Romania.</p>
+      </div>
+      <div class="ft-col">
+        <h4>Navigare</h4>
+        <a href="ghid.html">📖 Ghidul Viata dupa AVC</a>
+        <a href="asistentultaupostavc.html">💙 Discuta cu Ana</a>
+        <a href="#realitate">Realitatea AVC</a><a href="#problema">Problema din sistem</a>
+        <a href="#solutia">Solutia noastra</a><a href="#pentru-cine">Pentru cine</a>
+        <a href="#de-ce-noi">De ce noi</a><a href="#info-avc">Despre AVC</a>
+      </div>
+      <div class="ft-col">
+        <h4>Implica-te</h4>
+        <a href="donatie-35.html">Redirectioneaza 3,5%</a>
+        <a href="donatie-20.html">Sponsorizare 20% companie</a>
+        <a href="#implica">Voluntariat</a><a href="#contact">Contact</a>
+        <div style="display:flex;gap:10px;margin-top:1rem;">
+          <a href="https://www.facebook.com/share/1LNMH58Ej6/?mibextid=wwXIfr" target="_blank" title="Facebook" style="width:34px;height:34px;background:rgba(255,255,255,0.08);border-radius:8px;display:flex;align-items:center;justify-content:center;transition:background 0.2s;color:rgba(255,255,255,0.5);text-decoration:none;font-size:1rem;" onmouseover="this.style.background='#1877f2';this.style.color='#fff'" onmouseout="this.style.background='rgba(255,255,255,0.08)';this.style.color='rgba(255,255,255,0.5)'">f</a>
+          <a href="https://www.instagram.com/asociatia_viata_dupa_avc?igsh=bHhyaGJtaWMwdThv&utm_source=qr" target="_blank" title="Instagram" style="width:34px;height:34px;background:rgba(255,255,255,0.08);border-radius:8px;display:flex;align-items:center;justify-content:center;transition:background 0.2s;color:rgba(255,255,255,0.5);text-decoration:none;font-size:0.9rem;" onmouseover="this.style.background='#e1306c';this.style.color='#fff'" onmouseout="this.style.background='rgba(255,255,255,0.08)';this.style.color='rgba(255,255,255,0.5)'">◎</a>
+          <a href="https://www.tiktok.com/@viata.dupa.avc?_r=1&_t=ZN-963sNPjUHQ6" target="_blank" title="TikTok" style="width:34px;height:34px;background:rgba(255,255,255,0.08);border-radius:8px;display:flex;align-items:center;justify-content:center;transition:background 0.2s;color:rgba(255,255,255,0.5);text-decoration:none;font-size:0.85rem;" onmouseover="this.style.background='#010101';this.style.color='#fff'" onmouseout="this.style.background='rgba(255,255,255,0.08)';this.style.color='rgba(255,255,255,0.5)'">♪</a>
+          <a href="https://wa.me/40741507884" target="_blank" title="WhatsApp" style="width:34px;height:34px;background:rgba(255,255,255,0.08);border-radius:8px;display:flex;align-items:center;justify-content:center;transition:background 0.2s;color:rgba(255,255,255,0.5);text-decoration:none;font-size:0.9rem;" onmouseover="this.style.background='#25d366';this.style.color='#fff'" onmouseout="this.style.background='rgba(255,255,255,0.08)';this.style.color='rgba(255,255,255,0.5)'">💬</a>
+        </div>
+      </div>
+    </div>
+    <div class="ft-bottom">
+      <span>2025 Asociatia Viata dupa AVC — Brasov, Romania · CIF: 50995360 · viatadupaavc@gmail.com</span>
+      <div style="display:flex;gap:1.2rem;"><a href="politica-gdpr.html">Politica GDPR</a><a href="termeni.html">Termeni si conditii</a></div>
+    </div>
+  </div>
+</footer>
+
+<script>
+function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open');}
+function handleSubmit(e){
+  e.preventDefault();const form=e.target;
+  fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(new FormData(form)).toString()})
+  .then(()=>{document.getElementById('formSuccess').style.display='block';form.reset();setTimeout(()=>document.getElementById('formSuccess').style.display='none',5000);})
+  .catch(()=>{document.getElementById('formSuccess').style.display='block';form.reset();});
+}
+const obs=new IntersectionObserver((entries)=>{entries.forEach((e,i)=>{if(e.isIntersecting)setTimeout(()=>e.target.classList.add('visible'),i*70);});},{threshold:0.08});
+document.querySelectorAll('.fade-in').forEach(el=>obs.observe(el));
+</script>
+<!-- WHATSAPP FLOATING -->
+<div id="wa-fab">
+  <div id="wa-tip2"><strong>WhatsApp</strong> — scrieți-ne direct 💬</div>
+  <a id="wa-btn" href="https://wa.me/40741507884?text=Buna%20ziua!%20Am%20o%20intrebare%20despre%20viata%20dupa%20AVC." target="_blank" title="Scrie-ne pe WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+</div>
+
+<!-- ===== ANA WIDGET FLOATING ===== -->
+<div id="ana-fab">
+  <div id="ana-tip" onclick="anaToggle()"><strong>Buna ziua!</strong> Sunt Ana — cu ce va ajut? 💙</div>
+
+  <div id="ana-win">
+    <div class="ana-hdr">
+      <div class="ana-av">🌿<div class="ana-av-dot"></div></div>
+      <div class="ana-hi">
+        <div class="ana-hn">Ana</div>
+        <div class="ana-hr">Consilier Viata dupa AVC · disponibila acum</div>
+      </div>
+      <a href="asistentultaupostavc.html" class="ana-hl">Pagina completa →</a>
+    </div>
+    <div class="ana-emg" id="ana-emg">⚠️ Urgenta? Sunati <strong>112</strong> imediat!</div>
+    <div class="ana-msgs" id="ana-msgs">
+      <div class="ana-msg bot">
+        <div class="ana-bbl">Buna ziua! Sunt <strong>Ana</strong>, consilierul Asociatiei Viata dupa AVC. 💙<br><br>Sunt aici pentru orice intrebare despre recuperare, drepturi sau ce va preocupa acum. <em>Nu sunteti singuri.</em></div>
+      </div>
+    </div>
+    <div class="ana-qrs" id="ana-qrs">
+      <button class="ana-qr" onclick="anaQ(this)">🏥 Dupa externare</button>
+      <button class="ana-qr" onclick="anaQ(this)">💊 Medicamente</button>
+      <button class="ana-qr" onclick="anaQ(this)">📋 Drepturi legale</button>
+      <button class="ana-qr" onclick="anaQ(this)">👨‍👩‍👧 Sfaturi familie</button>
+      <button class="ana-qr" onclick="anaQ(this)">🧠 Exercitii</button>
+      <button class="ana-qr" onclick="anaQ(this)">😔 Ma simt coplesit</button>
+    </div>
+    <div class="ana-inp-row">
+      <div class="ana-inp-wrap">
+        <textarea class="ana-ta" id="ana-inp" rows="1" placeholder="Scrieti intrebarea…" maxlength="600"
+          onkeydown="anaKey(event)" oninput="anaResize(this)"></textarea>
+      </div>
+      <button class="ana-snd" id="ana-sb" onclick="anaSend()">
+        <svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+      </button>
+    </div>
+    <div class="ana-note">Informatii orientative — nu inlocuiesc sfatul medicului · Urgente: 112</div>
+  </div>
+
+  <button id="ana-fab-btn" onclick="anaToggle()" title="Discutati cu Ana">
+    <div id="ana-fab-dot"></div>
+    <span class="ico-open"><svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg></span>
+    <span class="ico-close"><svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg></span>
+  </button>
+</div>
+
+<script>
+// ── ANA WIDGET ──────────────────────────────────────────
+
+const ANA_SYSTEM = `Ești Ana, consilierul empatic al Asociației Viata dupa AVC din Romania. Ești caldă, umană, vorbești ca o soră medicală cu experiență care a trăit personal experiența unui AVC în familie.
+
+PERSONALITATE: Caldă, empatică, răbdătoare. Folosești "dvs." cu căldură. Recunoști mai întâi emoția, abia apoi informezi. Răspunsuri concise, max 120 cuvinte.
+
+CUNOȘTINȚE — Ghidul Viata dupa AVC:
+- AVC ischemic (~85%) și hemoragic (~15%). F.A.S.T → 112 imediat
+- Fereastra critică: primele 3-6 luni, neuroplasticitate maximă
+- Echipa: neurolog, fizioterapeut, logoped, psiholog, terapeut ocupațional
+- Fizioterapie: 20 min zilnic > 2 ore/săptămânal — consecvența e secretul
+- Afazia NU = pierderea inteligenței. Depresie la 30-50% — tratabilă
+- Drepturi România: certificat handicap (CEPAH), pensie invaliditate, medicamente compensate
+- Dietă mediteraneană. Renunțare fumat — cel mai important pas
+- Asociația: viatadupaavc.ro, 0741 507 884, viatadupaavc@gmail.com, Brașov
+
+REGULI CRITICE:
+1. Simptome AVC → insistă imediat să sune 112
+2. Nu înlocuiești medicul — informații orientative
+3. Răspunzi DOAR în română, max 120 cuvinte`;
+
+const ANA_QS = {
+  '🏥 Dupa externare':'Ce fac imediat dupa externarea din spital?',
+  '💊 Medicamente':'Ce trebuie sa stiu despre medicamente dupa AVC?',
+  '📋 Drepturi legale':'Ce drepturi legale am in Romania dupa AVC?',
+  '👨‍👩‍👧 Sfaturi familie':'Cum pot ajuta un membru al familiei care a suferit AVC?',
+  '🧠 Exercitii':'Ce exercitii de recuperare pot face acasa?',
+  '😔 Ma simt coplesit':'Ma simt complet coplesit, nu stiu ce sa fac.'
+};
+
+let anaHistory=[], anaBusy=false;
+
+setTimeout(()=>{
+  const t=document.getElementById('ana-tip');if(t)t.style.display='none';
+  const t2=document.getElementById('wa-tip2');if(t2)t2.style.display='none';
+},6000);
+
+function anaEmbedQ(text){
+  anaToggle();
+  setTimeout(()=>{document.getElementById('ana-inp').value=text;anaSend();},400);
+}
+function anaEmbedSend(){
+  const inp=document.getElementById('ana-embed-inp');
+  if(!inp)return;
+  const text=inp.value.trim();if(!text)return;
+  inp.value='';anaToggle();
+  setTimeout(()=>{document.getElementById('ana-inp').value=text;anaSend();},400);
+}
+
+function anaToggle(){
+  const w=document.getElementById('ana-win'),b=document.getElementById('ana-fab-btn'),t=document.getElementById('ana-tip');
+  const open=w.classList.contains('open');
+  if(open){w.classList.remove('open');b.classList.remove('open');}
+  else{w.classList.add('open');b.classList.add('open');if(t)t.style.display='none';setTimeout(()=>document.getElementById('ana-inp').focus(),300);}
+}
+
+function anaKey(e){if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();anaSend();}}
+function anaResize(el){el.style.height='auto';el.style.height=Math.min(el.scrollHeight,70)+'px';}
+function anaQ(btn){document.getElementById('ana-inp').value=ANA_QS[btn.textContent.trim()]||btn.textContent;anaSend();}
+
+function anaAddMsg(role,text){
+  const area=document.getElementById('ana-msgs'),div=document.createElement('div');
+  div.className=`ana-msg ${role}`;
+  const c=role==='user'?text.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'):text.replace(/\*\*(.*?)\*\*/g,'<strong>$1</strong>').replace(/\*(.*?)\*/g,'<em>$1</em>').replace(/\n/g,'<br>');
+  div.innerHTML=`<div class="ana-bbl">${c}</div>`;
+  area.appendChild(div);area.scrollTop=area.scrollHeight;
+}
+
+function anaShowTyping(){
+  const area=document.getElementById('ana-msgs'),d=document.createElement('div');
+  d.className='ana-typ';d.id='ana-typ';
+  d.innerHTML=`<div class="ana-typ-b"><div class="ana-d"></div><div class="ana-d"></div><div class="ana-d"></div></div>`;
+  area.appendChild(d);area.scrollTop=area.scrollHeight;
+}
+function anaRemoveTyping(){const t=document.getElementById('ana-typ');if(t)t.remove();}
+
+async function anaSend(){
+  const inp=document.getElementById('ana-inp'),sb=document.getElementById('ana-sb');
+  const text=inp.value.trim();
+  if(!text||anaBusy)return;
+  document.getElementById('ana-qrs').style.display='none';
+  const emgW=['fata asimetrica','nu poate vorbi','pierdut cunostinta','112','urgenta','urgență'];
+  if(emgW.some(w=>text.toLowerCase().includes(w)))document.getElementById('ana-emg').classList.add('show');
+  anaAddMsg('user',text);inp.value='';inp.style.height='auto';
+  anaHistory.push({role:'user',content:text});
+  anaBusy=true;sb.disabled=true;anaShowTyping();
+  try{
+    const res=await fetch('https://api.anthropic.com/v1/messages',{
+      method:'POST',
+      headers:{'Content-Type':'application/json','anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true'},
+      body:JSON.stringify({model:'claude-sonnet-4-20250514',max_tokens:500,system:ANA_SYSTEM,messages:anaHistory})
+    });
+    const data=await res.json();anaRemoveTyping();
+    if(data.content&&data.content[0]){
+      const reply=data.content[0].text;
+      anaHistory.push({role:'assistant',content:reply});
+      anaAddMsg('bot',reply);
+      if(reply.includes('112')||reply.includes('urgență'))document.getElementById('ana-emg').classList.add('show');
+    }else{anaAddMsg('bot','A aparut o eroare. Contactati-ne la 0741 507 884 💙');}
+  }catch(e){anaRemoveTyping();anaAddMsg('bot','Conexiune intrerupta. Sunati la <strong>0741 507 884</strong> pentru ajutor direct 💙');}
+  anaBusy=false;sb.disabled=false;document.getElementById('ana-inp').focus();
+}
+// ── END ANA WIDGET ──────────────────────────────────────
+</script>
+
+</body>

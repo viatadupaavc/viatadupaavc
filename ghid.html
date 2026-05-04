@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Ghidul complet Viata dupa AVC – descarca gratuit. Recuperare, drepturi legale, sfaturi pentru familie si ingrijitori. Realizat de Asociatia Viata dupa AVC.">
+<meta name="keywords" content="ghid AVC gratuit, recuperare dupa AVC, drepturi pacienti AVC, ghid familie AVC, externare AVC, reabilitare neurologica Romania">
+<meta name="author" content="Asociatia Viata dupa AVC">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://viatadupaavc.ro/ghid.html">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://viatadupaavc.ro/ghid.html">
+<meta property="og:title" content="Ghidul Viata dupa AVC – Descarca Gratuit">
+<meta property="og:description" content="Tot ce trebuie sa stii dupa un AVC – intr-un singur ghid practic. Recuperare, drepturi, resurse. Gratuit.">
+<meta property="og:image" content="https://viatadupaavc.ro/og-image.jpg">
+<meta property="og:locale" content="ro_RO">
+<meta property="og:site_name" content="Viata dupa AVC">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ghidul Viata dupa AVC – Descarca Gratuit">
+<meta name="twitter:description" content="Tot ce trebuie sa stii dupa un AVC. Ghid practic gratuit pentru pacienti si familii.">
+<meta name="twitter:image" content="https://viatadupaavc.ro/og-image.jpg">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Book","name":"Ghidul Viata dupa AVC","author":{"@type":"Organization","name":"Asociatia Viata dupa AVC"},"publisher":{"@type":"Organization","name":"Asociatia Viata dupa AVC"},"inLanguage":"ro","isAccessibleForFree":true,"url":"https://viatadupaavc.ro/ghid.html","description":"Ghid complet pentru pacienti post-AVC, familii si ingrijitori. Recuperare, drepturi legale, resurse din Romania."}</script>
+<title>Ghidul Viata dupa AVC – Descarca gratuit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;0,700;1,600&family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<style>
+:root{--navy:#1a3a5c;--navy-dark:#132d47;--teal:#1a9aaa;--teal-dark:#157a88;--teal-light:#e3f4f6;--green:#5aaa2a;--white:#ffffff;--cream:#f7f9fb;--gray:#e2e8ed;--gray-light:#f0f4f7;--text:#2d3a46;--text-muted:#6b7f8e;--border:#dde4ea;--red:#c0392b;}
+*{margin:0;padding:0;box-sizing:border-box;}html{scroll-behavior:smooth;}
+body{font-family:'Nunito Sans',sans-serif;background:var(--cream);color:var(--text);min-height:100vh;}
+nav{background:var(--navy);height:62px;display:flex;align-items:center;padding:0 2rem;box-shadow:0 2px 16px rgba(0,0,0,0.18);position:sticky;top:0;z-index:100;}
+.ni{width:100%;max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;}
+.nl{display:flex;align-items:center;gap:10px;text-decoration:none;}
+.nl-ic{width:34px;height:34px;background:var(--teal);border-radius:7px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1rem;color:var(--white);}
+.nl-txt{color:var(--white);font-size:0.88rem;font-weight:700;line-height:1.2;}
+.nl-txt small{display:block;font-weight:400;font-size:0.7rem;color:rgba(255,255,255,0.5);}
+.back{color:rgba(255,255,255,0.65);text-decoration:none;font-size:0.82rem;display:flex;align-items:center;gap:6px;transition:color 0.2s;}
+.back:hover{color:var(--white);}
+
+.hero{background:linear-gradient(150deg,var(--navy-dark) 0%,var(--navy) 50%,#1f4060 100%);padding:4rem 2rem;position:relative;overflow:hidden;}
+.hero::after{content:'';position:absolute;bottom:-1px;left:0;right:0;height:60px;background:var(--cream);clip-path:ellipse(55% 100% at 50% 100%);}
+.hero-in{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;position:relative;z-index:1;}
+.hero-badge{display:inline-flex;align-items:center;gap:7px;background:rgba(26,154,170,0.2);border:1px solid rgba(26,154,170,0.4);color:var(--teal);padding:5px 14px;border-radius:20px;font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:1.2rem;}
+.hero h1{font-family:'Lora',serif;font-size:clamp(2rem,4vw,3rem);color:var(--white);font-weight:700;line-height:1.2;margin-bottom:1rem;}
+.hero h1 em{font-style:italic;color:var(--teal);}
+.hero-desc{color:rgba(255,255,255,0.7);font-size:0.97rem;line-height:1.8;margin-bottom:1.5rem;}
+.hero-tags{display:flex;gap:0.6rem;flex-wrap:wrap;}
+.hero-tag{background:rgba(255,255,255,0.1);color:rgba(255,255,255,0.8);padding:5px 12px;border-radius:20px;font-size:0.75rem;font-weight:600;}
+.hero-book{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);border-radius:16px;padding:2rem;display:flex;flex-direction:column;gap:1rem;align-items:center;}
+.hero-book-icon{font-size:5rem;line-height:1;}
+.hero-book h3{font-family:'Lora',serif;color:var(--white);font-size:1.2rem;text-align:center;}
+.hero-book p{color:rgba(255,255,255,0.5);font-size:0.8rem;text-align:center;}
+.hero-book-stats{display:grid;grid-template-columns:1fr 1fr;gap:0.8rem;width:100%;}
+.hbs{background:rgba(255,255,255,0.08);border-radius:8px;padding:0.8rem;text-align:center;}
+.hbs .n{font-family:'Lora',serif;font-size:1.4rem;font-weight:700;color:var(--teal);display:block;}
+.hbs .l{font-size:0.7rem;color:rgba(255,255,255,0.5);margin-top:2px;}
+
+.main{max-width:860px;margin:0 auto;padding:3rem 1.5rem 4rem;}
+
+.despre-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-bottom:2.5rem;}
+.dc{background:var(--white);border-radius:12px;padding:1.6rem;border:1px solid var(--border);box-shadow:0 2px 12px rgba(26,58,92,0.06);border-top:3px solid var(--teal);}
+.dc .icon{font-size:1.8rem;margin-bottom:0.8rem;display:block;}
+.dc h3{font-family:'Lora',serif;font-size:1rem;color:var(--navy);margin-bottom:0.6rem;font-weight:700;}
+.dc p{font-size:0.82rem;color:var(--text-muted);line-height:1.7;}
+
+.pentru-box{background:var(--white);border-radius:12px;padding:2rem;border:1px solid var(--border);margin-bottom:2.5rem;box-shadow:0 2px 12px rgba(26,58,92,0.06);}
+.pentru-box h2{font-family:'Lora',serif;font-size:1.4rem;color:var(--navy);margin-bottom:1.2rem;font-weight:700;}
+.pentru-list{display:grid;grid-template-columns:1fr 1fr;gap:0.8rem;}
+.pl{display:flex;align-items:flex-start;gap:10px;padding:0.9rem;background:var(--gray-light);border-radius:8px;}
+.pl .pl-ic{font-size:1.2rem;flex-shrink:0;}
+.pl p{font-size:0.83rem;color:var(--text);line-height:1.55;}
+.pl p strong{color:var(--navy);display:block;margin-bottom:2px;font-size:0.85rem;}
+
+.continut-box{background:linear-gradient(135deg,var(--navy-dark),var(--navy));border-radius:12px;padding:2rem;margin-bottom:2.5rem;}
+.continut-box h2{font-family:'Lora',serif;font-size:1.4rem;color:var(--white);margin-bottom:1.2rem;font-weight:700;}
+.continut-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.8rem;}
+.cg{display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.07);border-radius:8px;padding:0.9rem 1rem;}
+.cg .nr{width:24px;height:24px;background:var(--teal);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.72rem;font-weight:700;color:var(--white);flex-shrink:0;}
+.cg p{font-size:0.82rem;color:rgba(255,255,255,0.82);}
+
+.form-card{background:var(--white);border-radius:14px;box-shadow:0 4px 28px rgba(26,58,92,0.1);overflow:hidden;border:1px solid var(--border);}
+.form-head{background:linear-gradient(90deg,var(--navy-dark),var(--navy));padding:1.8rem 2rem;}
+.form-head h2{font-family:'Lora',serif;color:var(--white);font-size:1.3rem;font-weight:700;margin-bottom:0.4rem;}
+.form-head p{color:rgba(255,255,255,0.6);font-size:0.82rem;}
+.form-body{padding:2rem;}
+.fg{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;}
+.fld{display:flex;flex-direction:column;gap:5px;}
+.fld label{font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:var(--navy);}
+.req{color:var(--red);margin-left:2px;}
+.fld input{border:1.5px solid var(--border);border-radius:8px;padding:11px 14px;font-family:'Nunito Sans',sans-serif;font-size:0.93rem;color:var(--text);outline:none;transition:border-color 0.2s,box-shadow 0.2s;width:100%;background:var(--white);}
+.fld input:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(26,154,170,0.12);}
+.fld input.err{border-color:var(--red);}
+
+.gdpr-box{background:var(--gray-light);border-radius:10px;padding:1.2rem 1.4rem;border:1.5px solid transparent;transition:border-color 0.2s;margin-top:1.2rem;}
+.gdpr-box:focus-within{border-color:var(--teal);}
+.gdpr-row{display:flex;align-items:flex-start;gap:11px;margin-bottom:0.9rem;}
+.gdpr-row:last-child{margin-bottom:0;}
+.gdpr-row input[type=checkbox]{width:17px;height:17px;accent-color:var(--teal);cursor:pointer;flex-shrink:0;margin-top:2px;}
+.gdpr-row label{font-size:0.82rem;color:var(--text);line-height:1.65;cursor:pointer;}
+.gdpr-row label a{color:var(--teal);text-decoration:underline;}
+.gdpr-row label strong{color:var(--navy);}
+
+.err-msg{display:none;color:var(--red);font-size:0.85rem;text-align:center;margin-top:1rem;padding:10px;background:#fff0ee;border-radius:8px;}
+.dl-btn-wrap{text-align:center;margin-top:1.8rem;}
+.btn-download{background:linear-gradient(135deg,var(--teal),var(--teal-dark));color:var(--white);border:none;border-radius:10px;padding:16px 40px;font-family:'Nunito Sans',sans-serif;font-size:1rem;font-weight:700;cursor:pointer;transition:all 0.25s;box-shadow:0 4px 18px rgba(26,154,170,0.35);display:inline-flex;align-items:center;gap:10px;}
+.btn-download:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(26,154,170,0.45);}
+
+.succ{display:none;}.succ.vis{display:block;}
+.succ-card{background:var(--white);border-radius:14px;padding:3rem 2rem;text-align:center;border:1px solid var(--border);box-shadow:0 4px 24px rgba(26,58,92,0.08);}
+.succ-ic{width:76px;height:76px;background:linear-gradient(135deg,var(--green),#4a9422);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1.4rem;font-size:1.9rem;animation:pi 0.5s ease;}
+@keyframes pi{0%{transform:scale(0);opacity:0;}70%{transform:scale(1.1);}100%{transform:scale(1);opacity:1;}}
+.succ-card h2{font-family:'Lora',serif;font-size:1.8rem;color:var(--navy);margin-bottom:1rem;}
+.succ-card p{color:var(--text-muted);font-size:0.93rem;line-height:1.75;max-width:460px;margin:0 auto 0.8rem;}
+.succ-btns{display:flex;gap:1rem;justify-content:center;margin-top:1.5rem;flex-wrap:wrap;}
+.sbtn{padding:12px 24px;border-radius:8px;font-family:'Nunito Sans',sans-serif;font-size:0.88rem;font-weight:700;cursor:pointer;border:none;transition:all 0.2s;display:flex;align-items:center;gap:7px;}
+.sbtn.teal{background:var(--teal);color:var(--white);box-shadow:0 3px 12px rgba(26,154,170,0.3);}
+.sbtn.teal:hover{background:var(--teal-dark);}
+.sbtn.navy{background:var(--navy);color:var(--white);}
+.sbtn.navy:hover{background:var(--navy-dark);}
+
+footer{background:var(--navy-dark);color:rgba(255,255,255,0.4);text-align:center;padding:1.4rem;font-size:0.78rem;}
+footer a{color:var(--teal);text-decoration:none;}
+
+@media(max-width:768px){
+  .hero-in{grid-template-columns:1fr;}.hero-book{display:none;}
+  .despre-grid,.continut-grid,.pentru-list,.fg{grid-template-columns:1fr;}
+}
+@media(max-width:480px){.form-body{padding:1.4rem;}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="ni">
+    <a href="index.html" class="nl"><div class="nl-ic">V</div><div class="nl-txt">Viata dupa AVC<small>Asociatie Non-Profit · Brasov</small></div></a>
+    <a href="index.html" class="back"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg> Inapoi la site</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-in">
+    <div>
+      <div class="hero-badge">Ghid practic · Gratuit · 2025</div>
+      <h1>Ghidul <em>Viata dupa AVC</em></h1>
+      <p class="hero-desc">Tot ce trebuie sa stii dupa externare — intr-un singur document practic, scris pentru pacienti si familiile lor. Fara termeni medicali complicati, cu informatii concrete si resurse reale.</p>
+      <div class="hero-tags">
+        <span class="hero-tag">📋 Recuperare medicala</span>
+        <span class="hero-tag">⚖️ Drepturi si beneficii</span>
+        <span class="hero-tag">🧠 Sanatate mentala</span>
+        <span class="hero-tag">🏠 Viata de zi cu zi</span>
+        <span class="hero-tag">👪 Ghid pentru familie</span>
+      </div>
+    </div>
+    <div class="hero-book">
+      <div class="hero-book-icon">📖</div>
+      <h3>Ghidul Viata dupa AVC</h3>
+      <p>Editia 2025 · Asociatia Viata dupa AVC · Brasov</p>
+      <div class="hero-book-stats">
+        <div class="hbs"><span class="n">100%</span><span class="l">Gratuit</span></div>
+        <div class="hbs"><span class="n">2025</span><span class="l">Actualizat</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<main class="main">
+
+  <div class="despre-grid">
+    <div class="dc"><span class="icon">🎯</span><h3>Scopul ghidului</h3><p>Sa ofere pacientilor si familiilor lor un punct de start clar dupa externare — cu pasi concreți, resurse utile si informatii verificate.</p></div>
+    <div class="dc"><span class="icon">✍️</span><h3>Cum a fost creat</h3><p>Bazat pe experienta directa a fondatorilor Asociatiei Viata dupa AVC si validat de specialisti in neurologie si recuperare medicala.</p></div>
+    <div class="dc"><span class="icon">🔄</span><h3>Actualizat constant</h3><p>Ghidul este revizuit periodic pentru a reflecta cele mai noi informatii, resurse disponibile si modificari legislative relevante.</p></div>
+  </div>
+
+  <div class="pentru-box">
+    <h2>Pentru cine este recomandat</h2>
+    <div class="pentru-list">
+      <div class="pl"><span class="pl-ic">🏥</span><p><strong>Pacienti recent externati</strong>Cei aflati in primele saptamani sau luni dupa un AVC, care nu stiu de unde sa inceapa recuperarea.</p></div>
+      <div class="pl"><span class="pl-ic">👪</span><p><strong>Familii si ingrijitori</strong>Parteneri, parinti sau copii care devin brusc ingrijitori si au nevoie de orientare practica imediata.</p></div>
+      <div class="pl"><span class="pl-ic">🔄</span><p><strong>Pacienti in recuperare activa</strong>Cei care urmeaza deja un program dar vor sa inteleaga mai bine optiunile si drepturile lor.</p></div>
+      <div class="pl"><span class="pl-ic">💙</span><p><strong>Persoane cu resurse limitate</strong>Cei care nu au acces la consultanta specializata si au nevoie de informatii practice si gratuite.</p></div>
+    </div>
+  </div>
+
+  <!-- NETLIFY FORM -->
+  <form name="ghid-download" netlify netlify-honeypot="bot-field" id="nlf" style="visibility:hidden;position:absolute;height:0;overflow:hidden;">
+    <input type="hidden" name="form-name" value="ghid-download"><input name="bot-field">
+    <input type="hidden" name="nume" id="nf_n">
+    <input type="hidden" name="prenume" id="nf_p">
+    <input type="hidden" name="email" id="nf_e">
+    <input type="hidden" name="telefon" id="nf_t">
+    <button type="submit">x</button>
+  </form>
+
+  <!-- FORMULAR -->
+  <div id="formWrap">
+    <div class="form-card">
+      <div class="form-head">
+        <h2>📥 Descarca ghidul gratuit</h2>
+        <p>Completeaza datele de mai jos pentru a accesa ghidul. Nu te costa nimic.</p>
+      </div>
+      <div class="form-body">
+        <div class="fg">
+          <div class="fld"><label>Nume <span class="req">*</span></label><input type="text" id="f_n" placeholder="Popescu"></div>
+          <div class="fld"><label>Prenume <span class="req">*</span></label><input type="text" id="f_p" placeholder="Ion"></div>
+          <div class="fld"><label>Email <span class="req">*</span></label><input type="email" id="f_e" placeholder="email@exemplu.ro"></div>
+          <div class="fld"><label>Telefon <span class="req">*</span></label><input type="tel" id="f_t" placeholder="07xx xxx xxx"></div>
+        </div>
+
+        <div class="gdpr-box">
+          <div class="gdpr-row">
+            <input type="checkbox" id="c1">
+            <label for="c1"><strong>Acord obligatoriu *</strong> — Sunt de acord cu prelucrarea datelor mele personale (nume, prenume, email, telefon) de catre Asociatia Viata dupa AVC, in scopul oferirii accesului la ghid si trimiterii de informatii relevante despre recuperarea post-AVC. Am citit <a href="#">Politica de Confidentialitate</a>.</label>
+          </div>
+          <div class="gdpr-row">
+            <input type="checkbox" id="c2">
+            <label for="c2">Doresc sa primesc periodic informatii si resurse utile despre recuperarea post-AVC de la Asociatia Viata dupa AVC. <span style="color:var(--text-muted);">(optional)</span></label>
+          </div>
+        </div>
+
+        <div class="err-msg" id="ferr"></div>
+
+        <div class="dl-btn-wrap">
+          <button class="btn-download" onclick="submitForm()">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Descarca Ghidul Gratuit
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SUCCESS -->
+  <div class="succ" id="sc">
+    <div class="succ-card">
+      <div class="succ-ic">✓</div>
+      <h2>Ghidul este al tau!</h2>
+      <p>Multumim! Ghidul s-a deschis intr-o fereastra noua. Daca nu, foloseste butonul de mai jos.</p>
+      <p>Poti descarca si <strong>Acordul GDPR</strong> cu datele tale pentru arhiva personala.</p>
+      <div class="succ-btns">
+        <button class="sbtn teal" onclick="deschideGhid()">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Deschide Ghidul
+        </button>
+        <button class="sbtn navy" onclick="genGDPR()">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          Acord GDPR (PDF)
+        </button>
+      </div>
+      <div style="margin-top:1.5rem;"><a href="index.html" style="color:var(--teal);text-decoration:none;font-weight:700;font-size:0.88rem;">← Inapoi la site</a></div>
+    </div>
+  </div>
+
+</main>
+
+<footer>2025 Asociatia Viata dupa AVC · <a href="index.html">viatadupaavc.ro</a> · viatadupaavc@gmail.com</footer>
+
+<script>
+const GHID_URL='https://drive.google.com/file/d/1P0BDLpiME6upwEzCXDCGn6bpk4q5tCnb/view?usp=sharing';
+
+function showErr(msg){const e=document.getElementById('ferr');e.textContent=msg;e.style.display='block';setTimeout(()=>e.style.display='none',5000);}
+
+function submitForm(){
+  let ok=true;
+  ['f_n','f_p','f_e','f_t'].forEach(id=>{const el=document.getElementById(id);if(!el.value.trim()){el.classList.add('err');el.addEventListener('input',()=>el.classList.remove('err'),{once:true});ok=false;}});
+  if(!ok){showErr('Te rugam sa completezi campurile obligatorii.');return;}
+  if(!document.getElementById('c1').checked){showErr('Te rugam sa accepti acordul de prelucrare a datelor.');return;}
+
+  document.getElementById('nf_n').value=document.getElementById('f_n').value;
+  document.getElementById('nf_p').value=document.getElementById('f_p').value;
+  document.getElementById('nf_e').value=document.getElementById('f_e').value;
+  document.getElementById('nf_t').value=document.getElementById('f_t').value;
+  const fd=new FormData(document.getElementById('nlf'));
+  fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(fd).toString()}).catch(()=>{});
+
+  deschideGhid();
+  document.getElementById('formWrap').style.display='none';
+  document.getElementById('sc').classList.add('vis');
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+function deschideGhid(){window.open(GHID_URL,'_blank');}
+
+function genGDPR(){
+  const {jsPDF}=window.jspdf;
+  const doc=new jsPDF({orientation:'portrait',unit:'mm',format:'a4'});
+  const W=210,M=20;
+  const azi=new Date().toLocaleDateString('ro-RO');
+  const n=document.getElementById('f_n').value;
+  const p=document.getElementById('f_p').value;
+  const e=document.getElementById('f_e').value;
+  const t=document.getElementById('f_t').value;
+  let y=18;
+
+  doc.setFontSize(12);doc.setFont('helvetica','bold');doc.setTextColor(0,0,0);
+  doc.text('ACORD privind prelucrarea datelor cu caracter personal',W/2,y,{align:'center'});y+=7;
+  doc.setFontSize(8.5);doc.setFont('helvetica','normal');doc.setTextColor(80,80,80);
+  doc.text('Descarcarea Ghidului "Viata dupa AVC"',W/2,y,{align:'center'});y+=12;
+
+  doc.setFontSize(9.5);doc.setFont('helvetica','normal');doc.setTextColor(0,0,0);
+  const intro=`Asociatia "Viata dupa AVC", CIF 50995360, Str. Zorilor Nr. 3, Bl. D6, Et. 3, Ap. 12, Brasov, Romania, in calitate de Operator, prelucreaza datele cu caracter personal ale persoanei de mai jos, in conformitate cu Regulamentul (UE) 2016/679 (GDPR).`;
+  const il=doc.splitTextToSize(intro,W-2*M);doc.text(il,M,y);y+=il.length*5+6;
+
+  doc.setFont('helvetica','bold');doc.text('Date prelucrate:',M,y);y+=5;
+  doc.setFont('helvetica','normal');
+  [`Nume si prenume: ${p} ${n}`,`Email: ${e}`,t?`Telefon: ${t}`:''].filter(Boolean).forEach(r=>{doc.text(r,M+4,y);y+=5;});
+  y+=3;
+
+  doc.setFont('helvetica','bold');doc.text('Scopul prelucrarii:',M,y);y+=5;
+  doc.setFont('helvetica','normal');
+  const sc=`Datele sunt prelucrate in scopul oferirii accesului la Ghidul "Viata dupa AVC" si, daca a fost exprimat acordul optional, pentru transmiterea periodica de informatii si resurse utile despre recuperarea post-AVC.`;
+  const sl=doc.splitTextToSize(sc,W-2*M-4);doc.text(sl,M+4,y);y+=sl.length*5+5;
+
+  [['Temeiul legal:','Consimtamantul persoanei vizate (Art. 6(1)(a) GDPR).',30],['Durata pastrarii:','3 ani de la data acordului.',32]].forEach(([l,v,o])=>{
+    doc.setFont('helvetica','bold');doc.text(l,M,y);doc.setFont('helvetica','normal');doc.text(v,M+o,y);y+=7;
+  });
+
+  const dr=`Ai dreptul de acces, rectificare, stergere, restrictionare a prelucrarii si portabilitate a datelor. Te poti retrage oricand la viatadupaavc@gmail.com.`;
+  const drl=doc.splitTextToSize(dr,W-2*M);doc.text(drl,M,y);y+=drl.length*5+10;
+
+  doc.setDrawColor(180,180,180);doc.line(M,y,W-M,y);y+=8;
+  doc.setFont('helvetica','bold');doc.setFontSize(10);doc.text('DECLARATIE DE CONSIMTAMANT',W/2,y,{align:'center'});y+=8;
+  doc.setFont('helvetica','normal');doc.setFontSize(9.5);
+
+  const decl=`Subsemnatul/a ${p} ${n}, email: ${e}${t?', tel: '+t:''}, declar ca am citit si am inteles informatiile de mai sus si imi exprim consimtamantul informat, liber si explicit, la data de ${azi}, astfel:`;
+  const decll=doc.splitTextToSize(decl,W-2*M);doc.text(decll,M,y);y+=decll.length*5+6;
+
+  function danu(text,checked,yy){
+    const ls=doc.splitTextToSize(text,W-2*M-20);
+    doc.setFont('helvetica','normal');doc.setTextColor(0,0,0);doc.text(ls,M,yy);
+    doc.setFont('helvetica','bold');doc.setTextColor(checked?26:150,checked?154:150,checked?170:150);
+    doc.text(checked?'DA':'NU',W-M-10,yy);
+    doc.setTextColor(0,0,0);doc.setFont('helvetica','normal');
+    doc.setDrawColor(200,200,200);doc.line(M,yy+ls.length*4.5+1,W-M,yy+ls.length*4.5+1);
+    return yy+ls.length*4.5+6;
+  }
+  y=danu('Prelucrarea datelor mele personale pentru accesul la ghid si informatii relevante.',document.getElementById('c1').checked,y);
+  y=danu('Primirea periodica de informatii si resurse despre recuperarea post-AVC.',document.getElementById('c2').checked,y);
+  y+=6;
+
+  doc.setDrawColor(180,180,180);doc.line(M,y,W-M,y);y+=8;
+  doc.setFontSize(8.5);doc.setFont('helvetica','bold');doc.setTextColor(100,100,100);
+  doc.text('Data: ',M,y);doc.setFont('helvetica','normal');doc.setTextColor(0,0,0);doc.text(azi,M+14,y);
+  y+=8;
+  doc.setFont('helvetica','bold');doc.setFontSize(10);doc.setTextColor(26,154,170);
+  doc.text('✓ Acord electronic confirmat prin bifarea casutelor',W/2,y,{align:'center'});
+
+  doc.setFontSize(7);doc.setTextColor(150,150,150);
+  doc.text('Asociatia Viata dupa AVC · CIF 50995360 · viatadupaavc.ro · viatadupaavc@gmail.com',W/2,285,{align:'center'});
+
+  doc.save('Acord_GDPR_Ghid_'+n+'_'+p+'.pdf');
+}
+</script>
+</body>
+</html>
